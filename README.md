@@ -21,4 +21,5 @@ Then navigate to <http://localhost:8080>.
 ## Structure
 
 - `index.html` – main site content
+- `projects.html` – detailed project portfolio
 - `assets/css/styles.css` – global styles and responsive layout

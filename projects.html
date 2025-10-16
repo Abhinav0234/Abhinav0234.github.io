@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Project showcases coming soon from Abhinav Boora, spanning cybersecurity builds, short film animations, and indie games."
+    />
+    <title>Projects | Abhinav Boora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <header class="site-header" id="top">
+      <nav class="nav">
+        <a class="nav__brand" href="index.html#top">AB</a>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav__links" id="navMenu">
+          <a href="index.html#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#education">Education</a>
+          <a href="index.html#skills">Skills</a>
+          <a href="index.html#honors">Honors</a>
+          <a href="index.html#connect">Connect</a>
+        </div>
+      </nav>
+      <section class="hero hero--projects">
+        <div class="hero__copy">
+          <p class="hero__eyebrow">In Production</p>
+          <h1>Projects Coming Soon</h1>
+          <p class="hero__lead">
+            I’m curating a fresh slate of cybersecurity experiments, short film animations, and indie game
+            prototypes. Check back soon to explore the full builds and behind-the-scenes breakdowns.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">Preview What’s Next</a>
+            <a class="btn btn--ghost" href="index.html#contact">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero__card" role="img" aria-label="Project overview card">
+          <div class="hero__badge">Sneak Peek</div>
+          <ul>
+            <li>Cinematic short film animations exploring cyber ethics</li>
+            <li>Gameplay demos that teach secure thinking through puzzles</li>
+            <li>Hands-on labs inspired by CyberPatriot &amp; CYBERQUEST</li>
+          </ul>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="section" id="projects">
+        <div class="section__header">
+          <h2>Projects Coming Soon</h2>
+          <p>
+            I’m assembling a showcase that spans cybersecurity labs, short film animations, and playful indie
+            games. The first drops are scheduled for release soon—stay tuned!
+          </p>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>What to Expect</h3>
+            <p>
+              • Interactive cybersecurity challenges inspired by CyberPatriot and CYBERQUEST<br />
+              • Animated shorts that explore digital forensics stories through cinematic visuals<br />
+              • Prototype games that teach ethical hacking concepts in a fun, exploratory format
+            </p>
+          </article>
+          <article class="card">
+            <h3>Want Early Access?</h3>
+            <p>
+              I’m open to sharing early builds and storyboards with collaborators, mentors, and curious peers.
+              Reach out if you’d like a sneak peek or have ideas to co-create.
+            </p>
+            <a class="btn btn--ghost" href="mailto:superabhinav05@gmail.com">Email for Updates</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--accent" id="contact">
+        <div class="cta">
+          <h2>Let’s Build Together</h2>
+          <p>
+            Have a project in cybersecurity, digital forensics, or tech equity? I’m ready to collaborate on
+            solutions that are secure, ethical, and accessible.
+          </p>
+          <a class="btn btn--primary" href="mailto:superabhinav05@gmail.com">Email Me</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Abhinav Boora. Crafted with curiosity and courage.</p>
+      <a class="back-to-top" href="#top">Back to top</a>
+    </footer>
+
+    <script>
+      const navToggle = document.querySelector('.nav__toggle');
+      const navMenu = document.getElementById('navMenu');
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+      if (navToggle) {
+        navToggle.addEventListener('click', () => {
+          const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+          navToggle.setAttribute('aria-expanded', String(!expanded));
+          navMenu.classList.toggle('nav__links--open');
+        });
+      }
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+          navToggle.setAttribute('aria-expanded', 'false');
+          navMenu.classList.remove('nav__links--open');
+        }
+      });
+
+      const yearSpan = document.getElementById('year');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+
+      if (prefersReducedMotion.matches) {
+        document.body.classList.add('reduce-motion');
+      }
+    </script>
+  </body>
+</html>
