@@ -145,6 +145,19 @@ body {
   color: var(--text-primary);
 }
 
+.hero__profile {
+  margin-bottom: 24px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--brand-soft);
+  box-shadow: 0 8px 24px rgba(96, 165, 250, 0.3);
+}
+
 .hero__eyebrow {
   font-size: 0.95rem;
   letter-spacing: 0.24em;
