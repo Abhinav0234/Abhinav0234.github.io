@@ -1,393 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Abhinav Boora – National Cyber Scholar, cybersecurity enthusiast, and digital forensics student. Building secure solutions for tomorrow." />
-    <meta name="keywords" content="cybersecurity, digital forensics, ethical hacking, student, portfolio" />
-    <meta name="author" content="Abhinav Boora" />
-    <meta property="og:title" content="Abhinav Boora | Cybersecurity & Digital Forensics" />
-    <meta property="og:description" content="National Cyber Scholar passionate about securing digital ecosystems and advocating for tech equity." />
-    <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#00d4ff" />
-    <title>Abhinav Boora | Cybersecurity & Digital Forensics</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="icon" type="image/png" href="assets/css/img/ChatGPT Image Oct 17, 2025, 10_14_48 AM.png" />
-  </head>
-  <body>
-    <div class="noise-overlay" aria-hidden="true"></div>
-    <header class="site-header" id="top">
-      <nav class="nav">
-        <a class="nav__brand" href="#top">Abhinav Boora</a>
-        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">
-          <span class="sr-only">Toggle navigation</span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div class="nav__links" id="navMenu">
-          <a href="projects.html">Projects</a>
-          <a href="#about">About</a>
-          <a href="#certifications">Certifications</a>
-          <a href="#competitions">Competitions</a>
-          <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
-          <a href="#skills">Skills</a>
-          <a href="#honors">Honors</a>
-          <a href="#connect">Connect</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abhinav Boora – National Cyber Scholar, cybersecurity enthusiast, and digital forensics student. Building secure solutions for tomorrow." />
+  <meta name="keywords" content="cybersecurity, digital forensics, ethical hacking, student, portfolio" />
+  <meta name="author" content="Abhinav Boora" />
+  <meta property="og:title" content="Abhinav Boora | Cybersecurity & Digital Forensics" />
+  <meta property="og:description" content="National Cyber Scholar passionate about securing digital ecosystems and advocating for tech equity." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#10b981" />
+  <title>Abhinav Boora | Cybersecurity &amp; Digital Forensics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/png" href="assets/css/img/ChatGPT Image Oct 17, 2025, 10_14_48 AM.png" />
+</head>
+<body>
+
+  <!-- background -->
+  <div class="mesh-bg" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar" id="main-nav">
+    <a class="navbar__logo" href="#top">AB</a>
+    <button class="navbar__toggle" aria-expanded="false" aria-controls="navLinks" id="nav-toggle">
+      <span class="sr-only">Menu</span>
+      <span></span><span></span><span></span>
+    </button>
+    <div class="navbar__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#skills">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="#connect">Connect</a>
+    </div>
+  </nav>
+
+  <!-- ======= HERO ======= -->
+  <header class="hero" id="top">
+    <div class="container">
+      <div class="hero__inner">
+        <img src="assets/css/img/Screenshot 2025-11-18 104733.png" alt="Abhinav Boora" class="hero__avatar" />
+        <div class="hero__badge">National Cyber Scholar</div>
+        <h1 class="hero__title">Hi, I'm <span>Abhinav Boora</span></h1>
+        <p class="hero__subtitle">
+          Building secure solutions at the intersection of technology, law, and equity — one challenge at a time.
+        </p>
+        <div class="hero__typing">
+          <span class="hero__typing-text" id="typed-text"></span>
         </div>
-      </nav>
-      <section class="hero">
-        <div class="hero__copy">
-          <div class="hero__profile">
-            <img src="assets/css/img/Screenshot 2025-11-18 104733.png" alt="Abhinav Boora" class="profile-picture" />
-          </div>
-          <p class="hero__eyebrow">National Cyber Scholar</p>
-          <h1>Abhinav Boora</h1>
-          <p class="hero__lead">
-            Passionate about cybersecurity, digital forensics, and building secure solutions 
-            at the intersection of technology, law, and equity. Currently shaping the future 
-            of cyber defense one challenge at a time.
-          </p>
-          <div class="hero__meta">
-            <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Virginia, USA</span>
-            <span class="meta-item"><i class="fas fa-shield-halved"></i> Cybersecurity</span>
-            <span class="meta-item"><i class="fas fa-search"></i> Digital Forensics</span>
-            <span class="meta-item"><i class="fas fa-users"></i> Mentor & Advocate</span>
-          </div>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="#experience"><i class="fas fa-rocket"></i> Explore My Journey</a>
-            <a class="btn btn--ghost" href="projects.html"><i class="fas fa-code"></i> View Projects</a>
-            <a class="btn btn--ghost" href="#connect"><i class="fas fa-envelope"></i> Let's Connect</a>
-          </div>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#experience"><i class="fas fa-rocket"></i> Explore My Journey</a>
+          <a class="btn btn--outline" href="projects.html"><i class="fas fa-code"></i> View Projects</a>
+          <a class="btn btn--outline" href="#connect"><i class="fas fa-envelope"></i> Let's Connect</a>
         </div>
-        <div class="hero__card" role="img" aria-label="Cybersecurity achievements">
-          <div class="hero__badge">Aspiring Cybersecurity Professional</div>
-          <ul>
-            <li><strong>CyberPatriot</strong> & <strong>CYBERQUEST</strong> National Competitor</li>
-            <li>Recipient of <strong>Advanced SANS Training</strong></li>
-            <li>Champion of <strong>Ethical Hacking</strong> & Cyber Law</li>
-            <li><strong>$3,000+</strong> in Educational Benefits Earned</li>
-          </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= STATS BAR ======= -->
+  <div class="stats">
+    <div class="container">
+      <div class="stats__inner">
+        <div class="stats__item">
+          <div class="stats__number">7<span class="accent">+</span></div>
+          <div class="stats__label">Competitions</div>
         </div>
-      </section>
-    </header>
-    <main>
-      <section class="section" id="about">
-        <div class="section__header">
-          <h2>About Me</h2>
-          <p>
-            I'm Abhinav Boora — a high school student driven by curiosity and a passion for 
-            cybersecurity, digital forensics, and criminal justice. I thrive at the intersection 
-            of technology and law, working to secure systems while championing digital equity.
-          </p>
+        <div class="stats__item">
+          <div class="stats__number">4</div>
+          <div class="stats__label">Certifications</div>
         </div>
-        <div class="about-grid">
-          <article class="about-card">
+        <div class="stats__item">
+          <div class="stats__number"><span class="accent">$</span>3k<span class="accent">+</span></div>
+          <div class="stats__label">Benefits Earned</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__number">10<span class="accent">+</span></div>
+          <div class="stats__label">Tech Skills</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ======= ABOUT — BENTO ======= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__label">About</div>
+        <h2 class="section__title">Who I Am</h2>
+        <p class="section__desc">
+          A high school student driven by curiosity and a passion for cybersecurity, digital forensics, and criminal justice.
+        </p>
+
+        <div class="bento">
+          <!-- wide card -->
+          <div class="bento__card bento__card--wide bento__card--accent">
+            <div class="bento__icon"><i class="fas fa-shield-halved"></i></div>
             <h3>Cybersecurity Excellence</h3>
-            <p>
-              From national CTF competitions to advanced SANS training, I'm constantly 
-              expanding my toolkit for defending digital ecosystems. I study how attackers 
-              think so I can build stronger defenses.
-            </p>
-          </article>
-          <article class="about-card">
+            <p>From national CTF competitions to advanced SANS training, I'm constantly expanding my toolkit for defending digital ecosystems. I study how attackers think so I can build stronger defenses.</p>
+          </div>
+          <!-- regular card -->
+          <div class="bento__card">
+            <div class="bento__icon"><i class="fas fa-users"></i></div>
             <h3>Community Impact</h3>
-            <p>
-              Beyond code and security, I tutor students through UPchieve and create 
-              compelling short films and video essays that spotlight stories of justice, 
-              equity, and emerging technology.
-            </p>
-          </article>
-          <article class="about-card">
+            <p>I tutor students through UPchieve and create compelling short films and video essays that spotlight stories of justice, equity, and emerging technology.</p>
+          </div>
+          <!-- regular card -->
+          <div class="bento__card">
+            <div class="bento__icon"><i class="fas fa-scale-balanced"></i></div>
             <h3>Interdisciplinary Vision</h3>
-            <p>
-              Cyber law and ethical hacking fascinate me the most — where technical 
-              expertise meets policy, compliance, and real human impact. I bridge these 
-              worlds to create meaningful change.
-            </p>
-          </article>
+            <p>Cyber law and ethical hacking fascinate me — where technical expertise meets policy, compliance, and real human impact.</p>
+          </div>
+          <!-- wide card -->
+          <div class="bento__card bento__card--wide">
+            <div class="bento__icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h3>Based in Virginia, USA</h3>
+            <p>Currently studying at Independence High School with a focus on cybersecurity, computer science, and advanced STEM coursework. Active competitor in CyberPatriot, 3C Cyber Cup, and Lockheed Martin CTF teams.</p>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section" id="certifications">
-        <div class="section__header">
-          <h2>Certifications</h2>
-          <p>Hard-earned credentials that validate technical expertise and commitment to cyber excellence.</p>
-        </div>
-        <div class="cards-grid">
-          <article class="card">
-            <h3><i class="fas fa-network-wired"></i> IT Specialist – Networking</h3>
-            <p class="card__meta">Certiport · June 2025</p>
-            <p>Industry-recognized certification validating expertise in network configuration, troubleshooting protocols, and building secure infrastructure foundations.</p>
-          </article>
-          <article class="card">
-            <h3><i class="fas fa-award"></i> National Cyber Scholar</h3>
-            <p class="card__meta">National Cyber Scholarship Foundation · February 2024</p>
-            <p>Prestigious recognition for exceptional cybersecurity knowledge, earning $3,000+ in educational benefits and access to the exclusive Cyber Foundations Academy program.</p>
-          </article>
-        </div>
-      </section>
+    <!-- ======= EXPERIENCE ======= -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <div class="section__label">Experience</div>
+        <h2 class="section__title">Where I've Worked</h2>
+        <p class="section__desc">Internships, tutoring, and community service — each role building trust, precision, and real-world impact.</p>
 
-      <section class="section" id="competitions">
-        <div class="section__header">
-          <h2>Competitions</h2>
-          <p>Hands-on experience defending systems and solving challenges in national cybersecurity competitions.</p>
-        </div>
-        <div class="cards-grid">
-          <article class="card">
-            <h3><i class="fas fa-trophy"></i> CyberPatriot</h3>
-            <p class="card__meta">Air Force Association · 2 Years</p>
-            <p>Two-year competitor in the nation's premier youth cyber defense competition. Achieved <strong>Platinum tier</strong> in qualifying rounds during first year, securing and hardening Windows and Linux systems against simulated attacks.</p>
-          </article>
-          <article class="card">
-            <h3><i class="fas fa-network-wired"></i> FBLA Network Design</h3>
-            <p class="card__meta">Future Business Leaders of America · 2025–2026</p>
-            <p>Competing in the Network Design event, demonstrating expertise in designing secure, efficient network infrastructures and presenting technical solutions to real-world business challenges.</p>
-          </article>
-          <article class="card">
-            <h3><i class="fas fa-flag"></i> picoCTF</h3>
-            <p class="card__meta">Carnegie Mellon University</p>
-            <p>Participant in one of the world's largest cybersecurity competitions for students, tackling challenges in cryptography, reverse engineering, web exploitation, forensics, and binary exploitation.</p>
-          </article>
-          <article class="card">
-            <h3><i class="fas fa-jet-fighter"></i> Lockheed Martin CyberQuest CTF</h3>
-            <p class="card__meta">Lockheed Martin</p>
-            <p>Competed in Lockheed Martin's capture-the-flag competition, solving industry-relevant cybersecurity challenges designed by defense sector professionals.</p>
-          </article>
-          <article class="card">
-            <h3><i class="fas fa-shield-halved"></i> 3C Cyber Cup</h3>
-            <p class="card__meta">Community Cyber Challenge</p>
-            <p>Team competitor in the 3C Cyber Cup, collaborating to defend virtual networks and respond to live cyber threats in a fast-paced competition environment.</p>
-          </article>
-          <article class="card">
-            <h3><i class="fas fa-medal"></i> Divergent Teams DC Hackathon</h3>
-            <p class="card__meta">2nd Place · Computer Science · 2025</p>
-            <p>Secured <strong>2nd place</strong> in the Computer Science competition at the Divergent Teams DC hackathon, demonstrating innovative problem-solving and technical skills under pressure.</p>
-          </article>
-          <article class="card">
-            <h3><i class="fas fa-heart"></i> LoveBytes CTF</h3>
-            <p class="card__meta">3rd Place</p>
-            <p>Achieved <strong>3rd place</strong> in the LoveBytes CTF competition, showcasing expertise in capture-the-flag challenges and cybersecurity problem-solving.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="experience">
-        <div class="section__header">
-          <h2>Experience</h2>
-          <p>A diverse portfolio of internships, tutoring, and community service — each role building trust, precision, and real-world impact.</p>
-        </div>
         <div class="timeline">
-          <article class="timeline__item">
-            <div class="timeline__meta">
-              <span class="timeline__role">Inventory Manager</span>
-              <span class="timeline__org">LA Plata Pharmacy Internship</span>
-              <span class="timeline__date">Jun 2025 – Present · La Plata, Maryland</span>
-            </div>
-            <ul class="timeline__list">
-              <li>Organized and categorized medications with meticulous attention to detail.</li>
-              <li>Packed prescription orders and kept workspaces compliant with sanitation standards.</li>
-              <li>Gained insight into pharmaceutical workflows while sharpening time management skills.</li>
-            </ul>
-          </article>
-          <article class="timeline__item">
-            <div class="timeline__meta">
-              <span class="timeline__role">Tutor</span>
-              <span class="timeline__org">Abhinav's Math &amp; Science (Self-employed)</span>
-              <span class="timeline__date">Jun 2025 – Present · Loudoun County, Virginia</span>
-            </div>
-            <ul class="timeline__list">
-              <li>Delivered one-on-one math and science sessions tailored to each learner’s pace.</li>
+
+          <div class="tl-item">
+            <div class="tl-role">Tutor</div>
+            <div class="tl-org">Abhinav's Math &amp; Science (Self-employed)</div>
+            <div class="tl-date">Jun 2025 – Present · Loudoun County, Virginia</div>
+            <ul class="tl-bullets">
+              <li>Delivered one-on-one math and science sessions tailored to each learner's pace.</li>
               <li>Built confidence in STEM fundamentals through practical, problem-solving approaches.</li>
             </ul>
-          </article>
-          <article class="timeline__item">
-            <div class="timeline__meta">
-              <span class="timeline__role">Volunteer Tutor</span>
-              <span class="timeline__org">UPchieve</span>
-              <span class="timeline__date">Jan 2025 – Present · Remote</span>
-            </div>
-            <ul class="timeline__list">
+          </div>
+          <div class="tl-item">
+            <div class="tl-role">Volunteer Tutor</div>
+            <div class="tl-org">UPchieve</div>
+            <div class="tl-date">Jan 2025 – Present · Remote</div>
+            <ul class="tl-bullets">
               <li>Provided academic support and college counseling to low-income students.</li>
               <li>Specialized in math, computer science, and test preparation while reinforcing equity.</li>
             </ul>
-          </article>
-          <article class="timeline__item">
-            <div class="timeline__meta">
-              <span class="timeline__role">Food Preparer</span>
-              <span class="timeline__org">Anna Sudha Community Kitchens</span>
-              <span class="timeline__date">Aug 2024 – Present · Volunteer</span>
-            </div>
-            <ul class="timeline__list">
+          </div>
+          <div class="tl-item">
+            <div class="tl-role">Food Preparer</div>
+            <div class="tl-org">Anna Sudha Community Kitchens</div>
+            <div class="tl-date">Aug 2024 – Present · Volunteer</div>
+            <ul class="tl-bullets">
               <li>Prepared and organized meals serving underserved communities.</li>
               <li>Ensured operations ran smoothly with a focus on care, efficiency, and collaboration.</li>
             </ul>
-          </article>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section" id="education">
-        <div class="section__header">
-          <h2>Education</h2>
-          <p>Grounded in advanced STEM programs with extracurriculars that reinforce technical rigor.</p>
-        </div>
-        <div class="cards-grid">
-          <article class="card">
-            <h3>Independence High School</h3>
-            <p class="card__meta">2023 – 2027</p>
-            <p>
-              Focus on cybersecurity, computer science, and advanced STEM coursework. Active participant in
-              CyberPatriot, 3C Cyber Cup, and Lockheed Martin CTF teams.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Brambleton Middle School</h3>
-            <p class="card__meta">Middle School Diploma</p>
-            <p>
-              Recognized for strong leadership and academic achievements, including the prestigious
-              Presidential Award.
-            </p>
-          </article>
-        </div>
-      </section>
+    <!-- ======= ACHIEVEMENTS — Certifications + Competitions + Honors ======= -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section__label">Achievements</div>
+        <h2 class="section__title">Certifications &amp; Competitions</h2>
+        <p class="section__desc">Hard-earned credentials and hands-on cybersecurity competition experience.</p>
 
-      <section class="section" id="skills">
-        <div class="section__header">
-          <h2>Skills & Expertise</h2>
-          <p>A versatile toolkit spanning technical cybersecurity skills, programming languages, and leadership capabilities.</p>
+        <!-- Tab filter -->
+        <div style="display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap" id="filter-tabs">
+          <button class="btn btn--sm btn--primary" data-filter="all">All</button>
+          <button class="btn btn--sm btn--outline" data-filter="cert">Certifications</button>
+          <button class="btn btn--sm btn--outline" data-filter="comp">Competitions</button>
+          <button class="btn btn--sm btn--outline" data-filter="honor">Honors</button>
         </div>
-        <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.5rem;">Hard Skills</h3>
-        <div class="skills-grid">
-          <span class="skill-tag"><i class="fas fa-shield-halved"></i> Cybersecurity</span>
-          <span class="skill-tag"><i class="fas fa-magnifying-glass"></i> Digital Forensics</span>
-          <span class="skill-tag"><i class="fas fa-user-secret"></i> Ethical Hacking</span>
-          <span class="skill-tag"><i class="fas fa-bug"></i> Penetration Testing</span>
-          <span class="skill-tag"><i class="fas fa-network-wired"></i> Network Security</span>
-          <span class="skill-tag"><i class="fas fa-code"></i> Python</span>
-          <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
-          <span class="skill-tag"><i class="fas fa-plus"></i> C++</span>
-          <span class="skill-tag"><i class="fas fa-hashtag"></i> C#</span>
-          <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
-          <span class="skill-tag"><i class="fas fa-terminal"></i> Bash/Linux</span>
-          <span class="skill-tag"><i class="fas fa-terminal"></i> PowerShell</span>
-          <span class="skill-tag"><i class="fas fa-gamepad"></i> Game Development</span>
-          <span class="skill-tag"><i class="fas fa-wrench"></i> Troubleshooting</span>
-        </div>
-        <h3 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--accent); font-size: 1.5rem;">Soft Skills</h3>
-        <div class="skills-grid">
-          <span class="skill-tag"><i class="fas fa-lightbulb"></i> Problem Solving</span>
-          <span class="skill-tag"><i class="fas fa-chalkboard-teacher"></i> Mentoring</span>
-          <span class="skill-tag"><i class="fas fa-users"></i> Team Leadership</span>
-        </div>
-      </section>
 
-      <section class="section" id="honors">
-        <div class="section__header">
-          <h2>Honors & Awards</h2>
-          <p>Recognition that reflects leadership, dedication, and a commitment to excellence.</p>
-        </div>
-        <div class="cards-grid">
-          <article class="card">
-            <h3><i class="fas fa-medal"></i> Presidential Award</h3>
-            <p class="card__meta">May 2023 · Brambleton Middle School</p>
+        <div class="card-grid" id="achievements-grid">
+          <!-- Certifications -->
+          <article class="card" data-cat="cert">
+            <span class="card__icon"><i class="fas fa-network-wired"></i></span>
+            <h3>IT Specialist – Networking</h3>
+            <div class="card__meta">Certiport · June 2025</div>
+            <p>Industry-recognized certification validating expertise in network configuration, troubleshooting protocols, and building secure infrastructure.</p>
+          </article>
+          <article class="card" data-cat="cert">
+            <span class="card__icon"><i class="fas fa-award"></i></span>
+            <h3>National Cyber Scholar</h3>
+            <div class="card__meta">NCSF · February 2024</div>
+            <p>Prestigious recognition for exceptional cybersecurity knowledge, earning $3,000+ in educational benefits and access to the Cyber Foundations Academy.</p>
+          </article>
+          <article class="card" data-cat="cert">
+            <span class="card__icon"><i class="fas fa-shield-halved"></i></span>
+            <h3>IT Specialist – Cybersecurity</h3>
+            <div class="card__meta">Pearson · May 2026</div>
+            <p>Industry-recognized certification validating fundamental cybersecurity knowledge, threat mitigation, and network security principles.</p>
+          </article>
+          <article class="card" data-cat="cert">
+            <span class="card__icon"><i class="fas fa-lock"></i></span>
+            <h3>IT Specialist – Network Security</h3>
+            <div class="card__meta">Pearson · Apr 2026</div>
+            <p>Industry-recognized certification validating expertise in securing network infrastructures, identifying vulnerabilities, and applying defense strategies.</p>
+          </article>
+
+          <!-- Competitions -->
+          <article class="card" data-cat="comp">
+            <span class="card__icon"><i class="fas fa-trophy"></i></span>
+            <h3>CyberPatriot</h3>
+            <div class="card__meta">Air Force Association · 2 Years</div>
+            <p>Two-year competitor achieving <strong>Platinum tier</strong> in qualifying rounds, securing and hardening Windows and Linux systems against simulated attacks.</p>
+          </article>
+          <article class="card" data-cat="comp">
+            <span class="card__icon"><i class="fas fa-network-wired"></i></span>
+            <h3>FBLA Network Design</h3>
+            <div class="card__meta">FBLA · 2025–2026</div>
+            <p>Competing in Network Design, demonstrating expertise in designing secure, efficient network infrastructures for real-world business challenges.</p>
+          </article>
+          <article class="card" data-cat="comp">
+            <span class="card__icon"><i class="fas fa-flag"></i></span>
+            <h3>picoCTF</h3>
+            <div class="card__meta">Carnegie Mellon University</div>
+            <p>Participant in one of the world's largest cybersecurity competitions, tackling cryptography, reverse engineering, web exploitation, and forensics.</p>
+          </article>
+          <article class="card" data-cat="comp">
+            <span class="card__icon"><i class="fas fa-jet-fighter"></i></span>
+            <h3>Lockheed Martin CyberQuest</h3>
+            <div class="card__meta">Lockheed Martin</div>
+            <p>Competed in Lockheed Martin's CTF competition, solving industry-relevant cybersecurity challenges designed by defense sector professionals.</p>
+          </article>
+          <article class="card" data-cat="comp">
+            <span class="card__icon"><i class="fas fa-shield-halved"></i></span>
+            <h3>3C Cyber Cup</h3>
+            <div class="card__meta">Community Cyber Challenge</div>
+            <p>Team competitor defending virtual networks and responding to live cyber threats in a fast-paced competition environment.</p>
+          </article>
+          <article class="card" data-cat="comp">
+            <span class="card__icon"><i class="fas fa-medal"></i></span>
+            <h3>Divergent Teams DC Hackathon</h3>
+            <div class="card__meta">2nd Place · Computer Science · 2025</div>
+            <p>Secured <strong>2nd place</strong> in Computer Science, demonstrating innovative problem-solving and technical skills under pressure.</p>
+          </article>
+          <article class="card" data-cat="comp">
+            <span class="card__icon"><i class="fas fa-heart"></i></span>
+            <h3>LoveBytes CTF</h3>
+            <div class="card__meta">3rd Place</div>
+            <p>Achieved <strong>3rd place</strong>, showcasing expertise in capture-the-flag challenges and cybersecurity problem-solving.</p>
+          </article>
+
+          <!-- Honors -->
+          <article class="card" data-cat="honor">
+            <span class="card__icon"><i class="fas fa-medal"></i></span>
+            <h3>Presidential Award</h3>
+            <div class="card__meta">May 2023 · Brambleton Middle School</div>
             <p>Recognized for outstanding leadership, academic achievement, and positive impact throughout the 2022–2023 academic year.</p>
           </article>
-          <article class="card">
-            <h3><i class="fas fa-trophy"></i> National Cyber Scholar</h3>
-            <p class="card__meta">February 2024 · NCSF</p>
-            <p>One of the top performers nationwide in the National Cyber Scholarship Competition, demonstrating exceptional cybersecurity aptitude.</p>
-          </article>
-          <article class="card">
-            <h3><i class="fas fa-star"></i> CyberPatriot Competitor</h3>
-            <p class="card__meta">Ongoing · Air Force Association</p>
+          <article class="card" data-cat="honor">
+            <span class="card__icon"><i class="fas fa-star"></i></span>
+            <h3>CyberPatriot Competitor</h3>
+            <div class="card__meta">Ongoing · Air Force Association</div>
             <p>Active competitor in the nation's premier youth cyber defense competition, securing and hardening virtual systems against simulated attacks.</p>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section" id="connect">
-        <div class="section__header">
-          <h2>Let's Connect</h2>
-          <p>Follow my journey in cybersecurity, explore my projects, and join the conversation on emerging tech and digital equity.</p>
-        </div>
-        <div class="cards-grid">
-          <article class="card">
-            <h3><i class="fab fa-linkedin"></i> LinkedIn</h3>
-            <p class="card__meta">Professional Network</p>
-            <p>
-              Connect with me for updates on cybersecurity competitions, internship experiences, and career milestones.
-            </p>
-            <a class="btn btn--ghost" href="https://www.linkedin.com/in/abhinavboora/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View Profile</a>
-          </article>
-          <article class="card">
-            <h3><i class="fab fa-github"></i> GitHub</h3>
-            <p class="card__meta">Code Repository</p>
-            <p>
-              Explore my projects, cybersecurity experiments, and open-source contributions supporting competitions and research.
-            </p>
-            <a class="btn btn--ghost" href="https://github.com/Abhinav0234" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View Code</a>
-          </article>
-          <article class="card">
-            <h3><i class="fab fa-instagram"></i> Instagram</h3>
-            <p class="card__meta">Personal Highlights</p>
-            <p>
-              Behind-the-scenes glimpses from mentoring sessions, film projects, community service, and tech adventures.
-            </p>
-            <a class="btn btn--ghost" href="https://www.instagram.com/realabhi2500/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Follow Along</a>
-          </article>
-        </div>
-      </section>
+    <!-- ======= SKILLS ======= -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__label">Skills</div>
+        <h2 class="section__title">Technical Arsenal</h2>
+        <p class="section__desc">A versatile toolkit spanning cybersecurity, programming, and leadership.</p>
 
-      <section class="section section--accent" id="contact">
-        <div class="cta">
+        <div class="skills-section__cats">
+          <div class="skill-cat">
+            <div class="skill-cat__title"><i class="fas fa-shield-halved"></i> Security</div>
+            <div class="skill-pills">
+              <span class="pill">Cybersecurity</span>
+              <span class="pill">Digital Forensics</span>
+              <span class="pill">Ethical Hacking</span>
+              <span class="pill">Penetration Testing</span>
+              <span class="pill">Network Security</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat__title"><i class="fas fa-code"></i> Languages</div>
+            <div class="skill-pills">
+              <span class="pill">Python</span>
+              <span class="pill">Java</span>
+              <span class="pill">C++</span>
+              <span class="pill">C#</span>
+              <span class="pill">JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat__title"><i class="fas fa-terminal"></i> Systems</div>
+            <div class="skill-pills">
+              <span class="pill">Bash / Linux</span>
+              <span class="pill">PowerShell</span>
+              <span class="pill">Troubleshooting</span>
+              <span class="pill">Game Development</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat__title"><i class="fas fa-lightbulb"></i> Soft Skills</div>
+            <div class="skill-pills">
+              <span class="pill">Problem Solving</span>
+              <span class="pill">Mentoring</span>
+              <span class="pill">Team Leadership</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education inline -->
+        <div style="margin-top:40px">
+          <div class="section__label">Education</div>
+          <h3 style="font-family:'Outfit',sans-serif;font-size:1.4rem;font-weight:600;color:var(--fg);margin-bottom:20px">Academic Background</h3>
+          <div class="card-grid">
+            <article class="card">
+              <span class="card__icon"><i class="fas fa-graduation-cap"></i></span>
+              <h3>Independence High School</h3>
+              <div class="card__meta">2023 – 2027</div>
+              <p>Focus on cybersecurity, computer science, and advanced STEM coursework. Active participant in CyberPatriot, 3C Cyber Cup, and Lockheed Martin CTF teams.</p>
+            </article>
+            <article class="card">
+              <span class="card__icon"><i class="fas fa-school"></i></span>
+              <h3>Brambleton Middle School</h3>
+              <div class="card__meta">Middle School Diploma</div>
+              <p>Recognized for strong leadership and academic achievements, including the prestigious Presidential Award.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CONNECT ======= -->
+    <section class="section" id="connect">
+      <div class="container">
+        <div class="section__label">Connect</div>
+        <h2 class="section__title">Let's Build Together</h2>
+        <p class="section__desc">Follow my journey in cybersecurity, explore projects, and join the conversation on emerging tech and digital equity.</p>
+
+        <div class="social-row">
+          <a class="social-card" href="https://www.linkedin.com/in/abhinavboora/" target="_blank" rel="noopener">
+            <div class="social-card__icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="social-card__text">
+              <strong>LinkedIn</strong>
+              <span>Professional Network</span>
+            </div>
+          </a>
+          <a class="social-card" href="https://github.com/Abhinav0234" target="_blank" rel="noopener">
+            <div class="social-card__icon"><i class="fab fa-github"></i></div>
+            <div class="social-card__text">
+              <strong>GitHub</strong>
+              <span>Code &amp; Projects</span>
+            </div>
+          </a>
+          <a class="social-card" href="https://www.instagram.com/realabhi2500/" target="_blank" rel="noopener">
+            <div class="social-card__icon"><i class="fab fa-instagram"></i></div>
+            <div class="social-card__text">
+              <strong>Instagram</strong>
+              <span>Personal Highlights</span>
+            </div>
+          </a>
+          <a class="social-card" href="mailto:superabhinav05@gmail.com">
+            <div class="social-card__icon"><i class="fas fa-envelope"></i></div>
+            <div class="social-card__text">
+              <strong>Email</strong>
+              <span>Get in Touch</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CTA ======= -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
           <h2>Ready to Build Something Together?</h2>
-          <p>
-            Whether it's cybersecurity research, digital forensics projects, or community tech initiatives — 
-            I'm always open to meaningful collaborations and mentorship opportunities.
-          </p>
+          <p>Cybersecurity research, digital forensics, or community tech initiatives — I'm always open to meaningful collaborations.</p>
           <a class="btn btn--primary" href="mailto:superabhinav05@gmail.com"><i class="fas fa-paper-plane"></i> Send Me a Message</a>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Abhinav Boora. Crafted with <i class="fas fa-heart" style="color: var(--pink);"></i> and curiosity.</p>
-      <a class="back-to-top" href="#top">Back to top</a>
-    </footer>
+  </main>
 
-    <script>
-      const navToggle = document.querySelector('.nav__toggle');
-      const navMenu = document.getElementById('navMenu');
-      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Abhinav Boora. Crafted with <i class="fas fa-heart"></i> and curiosity.</p>
+      <a class="footer__top" href="#top">↑ Back to top</a>
+    </div>
+  </footer>
 
-      if (navToggle) {
-        navToggle.addEventListener('click', () => {
-          const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-          navToggle.setAttribute('aria-expanded', String(!expanded));
-          navMenu.classList.toggle('nav__links--open');
-        });
+  <script>
+  /* ---- nav toggle ---- */
+  const toggle = document.getElementById('nav-toggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!open));
+    links.classList.toggle('navbar__links--open');
+  });
+  window.addEventListener('resize', () => {
+    if (innerWidth > 768) {
+      toggle.setAttribute('aria-expanded', 'false');
+      links.classList.remove('navbar__links--open');
+    }
+  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    toggle.setAttribute('aria-expanded', 'false');
+    links.classList.remove('navbar__links--open');
+  }));
+
+  /* ---- year ---- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---- reduced motion ---- */
+  if (matchMedia('(prefers-reduced-motion:reduce)').matches) document.body.classList.add('reduce-motion');
+
+  /* ---- scroll reveal ---- */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); io.unobserve(e.target); }});
+  }, { threshold: .06, rootMargin: '0px 0px -60px 0px' });
+  document.querySelectorAll('.section').forEach(s => io.observe(s));
+
+  /* ---- typing effect ---- */
+  const phrases = [
+    'Cybersecurity Enthusiast',
+    'Digital Forensics Student',
+    'Ethical Hacker',
+    'National Cyber Scholar',
+    'Community Mentor'
+  ];
+  let pi = 0, ci = 0, deleting = false;
+  const el = document.getElementById('typed-text');
+  function type() {
+    const phrase = phrases[pi];
+    if (!deleting) {
+      el.textContent = phrase.slice(0, ++ci);
+      if (ci === phrase.length) { deleting = true; setTimeout(type, 2000); return; }
+      setTimeout(type, 80);
+    } else {
+      el.textContent = phrase.slice(0, --ci);
+      if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; setTimeout(type, 400); return; }
+      setTimeout(type, 40);
+    }
+  }
+  type();
+
+  /* ---- filter tabs ---- */
+  const tabs  = document.querySelectorAll('#filter-tabs button');
+  const cards = document.querySelectorAll('#achievements-grid .card');
+  tabs.forEach(tab => tab.addEventListener('click', () => {
+    tabs.forEach(t => { t.classList.remove('btn--primary'); t.classList.add('btn--outline'); });
+    tab.classList.remove('btn--outline'); tab.classList.add('btn--primary');
+    const f = tab.dataset.filter;
+    cards.forEach(c => {
+      if (f === 'all' || c.dataset.cat === f) {
+        c.style.display = '';
+        c.style.animation = 'scaleIn .35s var(--ease) both';
+      } else {
+        c.style.display = 'none';
+        c.style.animation = '';
       }
+    });
+  }));
 
-      window.addEventListener('resize', () => {
-        if (window.innerWidth > 768) {
-          navToggle.setAttribute('aria-expanded', 'false');
-          navMenu.classList.remove('nav__links--open');
-        }
-      });
-
-      const yearSpan = document.getElementById('year');
-      if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-      }
-
-      if (prefersReducedMotion.matches) {
-        document.body.classList.add('reduce-motion');
-      }
-    </script>
-  </body>
+  /* ---- navbar shrink on scroll ---- */
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => {
+    nav.style.background = scrollY > 80 ? 'rgba(5,5,6,.88)' : 'rgba(5,5,6,.70)';
+  }, { passive: true });
+  </script>
+</body>
 </html>

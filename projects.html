@@ -1,159 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Explore Abhinav Boora's projects - cybersecurity labs, animated short films, indie games, and more." />
-    <meta name="keywords" content="cybersecurity projects, digital forensics, indie games, animation" />
-    <meta name="author" content="Abhinav Boora" />
-    <meta name="theme-color" content="#00d4ff" />
-    <title>Projects | Abhinav Boora</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="icon" type="image/png" href="assets/css/img/ChatGPT Image Oct 17, 2025, 10_14_48 AM.png" />
-  </head>
-  <body>
-    <div class="noise-overlay" aria-hidden="true"></div>
-    <header class="site-header" id="top">
-      <nav class="nav">
-        <a class="nav__brand" href="index.html#top">Abhinav Boora</a>
-        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">
-          <span class="sr-only">Toggle navigation</span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div class="nav__links" id="navMenu">
-          <a href="index.html#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="index.html#experience">Experience</a>
-          <a href="index.html#education">Education</a>
-          <a href="index.html#skills">Skills</a>
-          <a href="index.html#honors">Honors</a>
-          <a href="index.html#connect">Connect</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Abhinav Boora's projects – cybersecurity labs, animated short films, indie games, and more." />
+  <meta name="keywords" content="cybersecurity projects, digital forensics, indie games, animation" />
+  <meta name="author" content="Abhinav Boora" />
+  <meta name="theme-color" content="#10b981" />
+  <title>Projects | Abhinav Boora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/png" href="assets/css/img/ChatGPT Image Oct 17, 2025, 10_14_48 AM.png" />
+</head>
+<body>
+
+  <!-- background -->
+  <div class="mesh-bg" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar">
+    <a class="navbar__logo" href="index.html#top">AB</a>
+    <button class="navbar__toggle" aria-expanded="false" aria-controls="navLinks" id="nav-toggle">
+      <span class="sr-only">Menu</span>
+      <span></span><span></span><span></span>
+    </button>
+    <div class="navbar__links" id="navLinks">
+      <a href="index.html#about">About</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#achievements">Achievements</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="index.html#connect">Connect</a>
+    </div>
+  </nav>
+
+  <!-- ======= HERO (compact) ======= -->
+  <header class="hero hero--sm" id="top">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__badge">Creative Portfolio</div>
+        <h1 class="hero__title">My <span>Projects</span></h1>
+        <p class="hero__subtitle">
+          Currently focused on my animated short film — exploring storytelling through animation and bringing creative visions to life.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects"><i class="fas fa-rocket"></i> Explore Below</a>
+          <a class="btn btn--outline" href="index.html#connect"><i class="fas fa-envelope"></i> Get in Touch</a>
         </div>
-      </nav>
-      <section class="hero hero--projects">
-        <div class="hero__copy">
-          <p class="hero__eyebrow">Creative Portfolio</p>
-          <h1>Current Project</h1>
-          <p class="hero__lead">
-            Currently focused on my animated short film project - exploring storytelling through animation 
-            and bringing creative visions to life.
-          </p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="#projects"><i class="fas fa-rocket"></i> Explore Projects</a>
-            <a class="btn btn--ghost" href="index.html#contact"><i class="fas fa-envelope"></i> Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======= FEATURED PROJECT ======= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__label">Featured</div>
+        <h2 class="section__title">Active Project</h2>
+        <p class="section__desc">Bringing creative storytelling to life through animation.</p>
+
+        <!-- large featured card -->
+        <div class="bento" style="grid-template-columns:1fr 1fr">
+          <div class="bento__card bento__card--accent" style="grid-row:span 2">
+            <div class="bento__icon"><i class="fas fa-film"></i></div>
+            <h3>"Unfolded" — Animated Short</h3>
+            <div style="font-size:.78rem;font-weight:600;color:var(--accent);margin:8px 0 14px;display:flex;align-items:center;gap:6px">
+              <span style="width:6px;height:6px;background:var(--accent);border-radius:50%;display:inline-block"></span>
+              In Progress
+            </div>
+            <p>An original animated short film exploring themes of identity and transformation. Currently in pre-production with character designs and storyboards underway.</p>
+            <div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:6px">
+              <span class="pill"><i class="fas fa-palette" style="margin-right:4px;color:var(--accent)"></i> Character Design</span>
+              <span class="pill"><i class="fas fa-pencil" style="margin-right:4px;color:var(--accent)"></i> Storyboarding</span>
+              <span class="pill"><i class="fas fa-video" style="margin-right:4px;color:var(--accent)"></i> Animation</span>
+            </div>
+          </div>
+          <div class="bento__card">
+            <div class="bento__icon"><i class="fas fa-lightbulb"></i></div>
+            <h3>What I'm Building</h3>
+            <ul style="margin-top:12px;display:grid;gap:10px">
+              <li style="display:flex;gap:8px;font-size:.88rem;color:var(--fg-2)"><span style="color:var(--accent)">→</span> Animated Short Film</li>
+              <li style="display:flex;gap:8px;font-size:.88rem;color:var(--fg-2)"><span style="color:var(--accent)">→</span> Character Design &amp; Storyboarding</li>
+              <li style="display:flex;gap:8px;font-size:.88rem;color:var(--fg-2)"><span style="color:var(--accent)">→</span> Animation Production</li>
+            </ul>
+          </div>
+          <div class="bento__card">
+            <div class="bento__icon"><i class="fas fa-clock"></i></div>
+            <h3>Project Status</h3>
+            <p style="margin-top:8px">Pre-production phase — building out the visual identity and narrative structure before moving into full animation pipeline.</p>
           </div>
         </div>
-        <div class="hero__card" role="img" aria-label="Project categories">
-          <div class="hero__badge">What I'm Building</div>
-          <ul>
-            <li><i class="fas fa-film"></i> Animated Short Film</li>
-            <li><i class="fas fa-palette"></i> Character Design & Storyboarding</li>
-            <li><i class="fas fa-video"></i> Animation Production</li>
-          </ul>
-        </div>
-      </section>
-    </header>
-    <main>
-      <section class="section" id="projects">
-        <div class="section__header">
-          <h2>Active Project</h2>
-          <p>
-            Focused on bringing creative storytelling to life through animation.
-          </p>
-        </div>
-        <div class="cards-grid">
-          <article class="card">
-            <h3><i class="fas fa-film"></i> "Unfolded" Animated Short</h3>
-            <p class="card__meta">Animation - In Progress</p>
-            <p>
-              An original animated short film exploring themes of identity and transformation. 
-              Currently in pre-production with character designs and storyboards underway.
-            </p>
-          </article>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section">
-        <div class="section__header">
-          <h2>Interested in Following Along?</h2>
-          <p>
-            I'm open to sharing storyboards, character designs, and animation progress with collaborators, 
-            mentors, and curious peers. Reach out if you'd like updates or have ideas to share!
-          </p>
-        </div>
-        <div class="cards-grid">
-          <article class="card">
-            <h3><i class="fas fa-users"></i> Collaborate With Me</h3>
-            <p class="card__meta">Open to partnerships</p>
-            <p>
-              Whether you're a fellow student, mentor, or industry professional - I'd love to connect 
-              and explore opportunities to build something meaningful together.
-            </p>
-            <a class="btn btn--ghost" href="mailto:superabhinav05@gmail.com"><i class="fas fa-envelope"></i> Reach Out</a>
-          </article>
-          <article class="card">
-            <h3><i class="fab fa-github"></i> Follow My Code</h3>
-            <p class="card__meta">GitHub Repository</p>
-            <p>
-              Star my repositories to get notified when new projects drop. All code is open source 
-              and available for learning and collaboration.
-            </p>
-            <a class="btn btn--ghost" href="https://github.com/Abhinav0234" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View GitHub</a>
-          </article>
-        </div>
-      </section>
+    <!-- ======= COLLABORATE ======= -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__label">Collaborate</div>
+        <h2 class="section__title">Follow Along</h2>
+        <p class="section__desc">Open to sharing storyboards, character designs, and animation progress with collaborators, mentors, and curious peers.</p>
 
-      <section class="section section--accent" id="contact">
-        <div class="cta">
+        <div class="card-grid">
+          <article class="card">
+            <span class="card__icon"><i class="fas fa-users"></i></span>
+            <h3>Collaborate With Me</h3>
+            <div class="card__meta">Open to partnerships</div>
+            <p>Whether you're a fellow student, mentor, or industry professional — I'd love to connect and explore opportunities to build something meaningful together.</p>
+            <a class="btn btn--outline btn--sm" href="mailto:superabhinav05@gmail.com" style="margin-top:16px"><i class="fas fa-envelope"></i> Reach Out</a>
+          </article>
+          <article class="card">
+            <span class="card__icon"><i class="fab fa-github"></i></span>
+            <h3>Follow My Code</h3>
+            <div class="card__meta">GitHub Repository</div>
+            <p>Star my repositories to get notified when new projects drop. All code is open source and available for learning and collaboration.</p>
+            <a class="btn btn--outline btn--sm" href="https://github.com/Abhinav0234" target="_blank" rel="noopener" style="margin-top:16px"><i class="fas fa-external-link-alt"></i> View GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CTA ======= -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
           <h2>Let's Create Something Amazing</h2>
-          <p>
-            Interested in animation, storytelling, or creative collaborations? I'm always looking to 
-            connect with fellow creatives and share ideas.
-          </p>
+          <p>Interested in animation, storytelling, or creative collaborations? I'm always looking to connect with fellow creatives.</p>
           <a class="btn btn--primary" href="mailto:superabhinav05@gmail.com"><i class="fas fa-paper-plane"></i> Start a Conversation</a>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer class="site-footer">
-      <p>&copy; <span id="year"></span> Abhinav Boora. Crafted with <i class="fas fa-heart" style="color: var(--pink);"></i> and curiosity.</p>
-      <a class="back-to-top" href="#top">Back to top</a>
-    </footer>
+  </main>
 
-    <script>
-      const navToggle = document.querySelector('.nav__toggle');
-      const navMenu = document.getElementById('navMenu');
-      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Abhinav Boora. Crafted with <i class="fas fa-heart"></i> and curiosity.</p>
+      <a class="footer__top" href="#top">↑ Back to top</a>
+    </div>
+  </footer>
 
-      if (navToggle) {
-        navToggle.addEventListener('click', () => {
-          const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-          navToggle.setAttribute('aria-expanded', String(!expanded));
-          navMenu.classList.toggle('nav__links--open');
-        });
-      }
+  <script>
+  const toggle = document.getElementById('nav-toggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!open));
+    links.classList.toggle('navbar__links--open');
+  });
+  window.addEventListener('resize', () => {
+    if (innerWidth > 768) {
+      toggle.setAttribute('aria-expanded', 'false');
+      links.classList.remove('navbar__links--open');
+    }
+  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    toggle.setAttribute('aria-expanded', 'false');
+    links.classList.remove('navbar__links--open');
+  }));
 
-      window.addEventListener('resize', () => {
-        if (window.innerWidth > 768) {
-          navToggle.setAttribute('aria-expanded', 'false');
-          navMenu.classList.remove('nav__links--open');
-        }
-      });
+  document.getElementById('year').textContent = new Date().getFullYear();
+  if (matchMedia('(prefers-reduced-motion:reduce)').matches) document.body.classList.add('reduce-motion');
 
-      const yearSpan = document.getElementById('year');
-      if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-      }
-
-      if (prefersReducedMotion.matches) {
-        document.body.classList.add('reduce-motion');
-      }
-    </script>
-  </body>
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); io.unobserve(e.target); }});
+  }, { threshold: .06, rootMargin: '0px 0px -60px 0px' });
+  document.querySelectorAll('.section').forEach(s => io.observe(s));
+  </script>
+</body>
 </html>
