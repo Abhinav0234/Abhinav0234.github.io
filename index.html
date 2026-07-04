@@ -1,269 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Abhinav Boora – National Cyber Scholar, cybersecurity enthusiast, and digital forensics student. Building secure solutions for tomorrow." />
-  <meta name="keywords" content="cybersecurity, digital forensics, ethical hacking, student, portfolio" />
-  <meta name="author" content="Abhinav Boora" />
-  <meta property="og:title" content="Abhinav Boora | Cybersecurity & Digital Forensics" />
-  <meta property="og:description" content="National Cyber Scholar passionate about securing digital ecosystems and advocating for tech equity." />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#10b981" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abhinav Boora | Cybersecurity &amp; Digital Forensics</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="icon" type="image/png" href="assets/css/img/ChatGPT Image Oct 17, 2025, 10_14_48 AM.png" />
+  <meta name="description" content="Abhinav Boora – National Cyber Scholar, cybersecurity competitor, and digital forensics student based in Virginia.">
+  <meta name="keywords" content="cybersecurity, digital forensics, ethical hacking, student, portfolio">
+  <meta name="author" content="Abhinav Boora">
+  <meta property="og:title" content="Abhinav Boora | Cybersecurity & Digital Forensics">
+  <meta property="og:description" content="National Cyber Scholar. CTF competitor. Digital forensics student. Based in Virginia.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- background -->
-  <div class="mesh-bg" aria-hidden="true"></div>
-  <div class="grid-bg" aria-hidden="true"></div>
-
-  <!-- ======= NAVBAR ======= -->
-  <nav class="navbar" id="main-nav">
-    <a class="navbar__logo" href="#top">AB</a>
-    <button class="navbar__toggle" aria-expanded="false" aria-controls="navLinks" id="nav-toggle">
-      <span class="sr-only">Menu</span>
-      <span></span><span></span><span></span>
-    </button>
-    <div class="navbar__links" id="navLinks">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#skills">Skills</a>
-      <a href="projects.html">Projects</a>
-      <a href="#connect">Connect</a>
-    </div>
-  </nav>
-
-  <!-- ======= HERO ======= -->
-  <header class="hero" id="top">
-    <div class="container">
-      <div class="hero__inner">
-        <img src="assets/css/img/profile-new.png" alt="Abhinav Boora" class="hero__avatar" />
-        <h1 class="hero__title">Hi, I'm <span>Abhinav Boora</span></h1>
-        <p class="hero__subtitle">
-          Building secure solutions at the intersection of technology, law, and equity — one challenge at a time.
-        </p>
-        <div class="hero__typing">
-          <span class="hero__typing-text" id="typed-text"></span>
-        </div>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#experience"><i class="fas fa-rocket"></i> Explore My Journey</a>
-          <a class="btn btn--outline" href="projects.html"><i class="fas fa-code"></i> View Projects</a>
-          <a class="btn btn--outline" href="#connect"><i class="fas fa-envelope"></i> Let's Connect</a>
-        </div>
-      </div>
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#top" class="site-logo">Abhinav Boora</a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
-  <!-- ======= STATS BAR ======= -->
-  <div class="stats">
-    <div class="container">
-      <div class="stats__inner">
-        <div class="stats__item">
-          <div class="stats__number">7<span class="accent">+</span></div>
-          <div class="stats__label">Competitions</div>
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="hero-label">Cybersecurity &amp; Digital Forensics</p>
+        <h1 class="hero-title">Hi, I'm Abhinav Boora.</h1>
+        <p class="hero-subtitle">
+          National Cyber Scholar. I compete in CTFs, study digital forensics, and break things to learn how to defend them. Currently a high school student in Virginia focused on security, law, and making tech more accessible.
+        </p>
+        <div class="hero-actions">
+          <a href="#experience" class="btn-primary">See What I've Done</a>
+          <a href="#projects" class="btn-outline">View Projects</a>
         </div>
-        <div class="stats__item">
-          <div class="stats__number">4</div>
-          <div class="stats__label">Certifications</div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-headshot">
+          <img src="img/headshot.jpg" alt="Abhinav Boora">
         </div>
-        <div class="stats__item">
-          <div class="stats__number"><span class="accent">$</span>3k<span class="accent">+</span></div>
-          <div class="stats__label">Benefits Earned</div>
-        </div>
-        <div class="stats__item">
-          <div class="stats__number">10<span class="accent">+</span></div>
-          <div class="stats__label">Tech Skills</div>
-        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       STATS BAR
+       ============================================ -->
+  <div class="stats-bar">
+    <div class="container stats-inner">
+      <div class="stat-item">
+        <div class="stat-number">7<span class="accent">+</span></div>
+        <div class="stat-label">Competitions</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">4</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><span class="accent">$</span>3k<span class="accent">+</span></div>
+        <div class="stat-label">Benefits Earned</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">10<span class="accent">+</span></div>
+        <div class="stat-label">Tech Skills</div>
       </div>
     </div>
   </div>
 
   <main>
 
-    <!-- ======= ABOUT — BENTO ======= -->
+    <!-- ============================================
+         ABOUT
+         ============================================ -->
     <section class="section" id="about">
       <div class="container">
-        <div class="section__label">About</div>
-        <h2 class="section__title">Who I Am</h2>
-        <p class="section__desc">
-          A high school student driven by curiosity and a passion for cybersecurity, digital forensics, and criminal justice.
+        <p class="section-label">About</p>
+        <h2 class="section-title">Who I Am</h2>
+        <p class="section-desc">
+          High school student. Cybersecurity nerd. I like figuring out how things break.
         </p>
 
-        <div class="bento">
-          <!-- wide card -->
-          <div class="bento__card bento__card--wide bento__card--accent">
-            <div class="bento__icon"><i class="fas fa-shield-halved"></i></div>
-            <h3>Cybersecurity Excellence</h3>
-            <p>From national CTF competitions to advanced SANS training, I'm constantly expanding my toolkit for defending digital ecosystems. I study how attackers think so I can build stronger defenses.</p>
+        <div class="about-cards">
+          <div class="about-card">
+            <h3>Security</h3>
+            <p>I compete in national CTFs and train through SANS. I study how attackers operate so I can build better defenses. That's the whole idea.</p>
           </div>
-          <!-- regular card -->
-          <div class="bento__card">
-            <div class="bento__icon"><i class="fas fa-users"></i></div>
-            <h3>Community Impact</h3>
-            <p>I tutor students through UPchieve and create compelling short films and video essays that spotlight stories of justice, equity, and emerging technology.</p>
+          <div class="about-card">
+            <h3>Community</h3>
+            <p>I tutor students through UPchieve — math, CS, and test prep for low-income kids. I also make short films and video essays about justice and technology.</p>
           </div>
-          <!-- regular card -->
-          <div class="bento__card">
-            <div class="bento__icon"><i class="fas fa-scale-balanced"></i></div>
-            <h3>Interdisciplinary Vision</h3>
-            <p>Cyber law and ethical hacking fascinate me — where technical expertise meets policy, compliance, and real human impact.</p>
+          <div class="about-card">
+            <h3>Law + Tech</h3>
+            <p>I'm interested in cyber law and ethical hacking — the place where technical work actually hits policy and affects real people.</p>
           </div>
-          <!-- wide card -->
-          <div class="bento__card bento__card--wide">
-            <div class="bento__icon"><i class="fas fa-map-marker-alt"></i></div>
-            <h3>Based in Virginia, USA</h3>
-            <p>Currently studying at Independence High School with a focus on cybersecurity, computer science, and advanced STEM coursework. Active competitor in CyberPatriot, 3C Cyber Cup, and Lockheed Martin CTF teams.</p>
+          <div class="about-card">
+            <h3>Virginia, USA</h3>
+            <p>Student at Independence High School. Coursework in cybersecurity, CS, and STEM. I compete with CyberPatriot, 3C Cyber Cup, and Lockheed Martin CTF teams.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ======= EXPERIENCE ======= -->
+    <!-- ============================================
+         EXPERIENCE
+         ============================================ -->
     <section class="section section--alt" id="experience">
       <div class="container">
-        <div class="section__label">Experience</div>
-        <h2 class="section__title">Where I've Worked</h2>
-        <p class="section__desc">Internships, tutoring, and community service — each role building trust, precision, and real-world impact.</p>
+        <p class="section-label">Experience</p>
+        <h2 class="section-title">Where I've Worked</h2>
+        <p class="section-desc">Tutoring, volunteering, and running my own thing.</p>
 
         <div class="timeline">
-
           <div class="tl-item">
             <div class="tl-role">Tutor</div>
             <div class="tl-org">Abhinav's Math &amp; Science (Self-employed)</div>
             <div class="tl-date">Jun 2025 – Present · Loudoun County, Virginia</div>
             <ul class="tl-bullets">
-              <li>Delivered one-on-one math and science sessions tailored to each learner's pace.</li>
-              <li>Built confidence in STEM fundamentals through practical, problem-solving approaches.</li>
+              <li>Run one-on-one math and science sessions, adapted to each student.</li>
+              <li>Help kids get comfortable with STEM basics through hands-on problem solving.</li>
             </ul>
           </div>
+
           <div class="tl-item">
             <div class="tl-role">Volunteer Tutor</div>
             <div class="tl-org">UPchieve</div>
             <div class="tl-date">Jan 2025 – Present · Remote</div>
             <ul class="tl-bullets">
-              <li>Provided academic support and college counseling to low-income students.</li>
-              <li>Specialized in math, computer science, and test preparation while reinforcing equity.</li>
+              <li>Tutor low-income students in math, CS, and test prep.</li>
+              <li>Also help with college counseling and applications.</li>
             </ul>
           </div>
+
           <div class="tl-item">
             <div class="tl-role">Food Preparer</div>
             <div class="tl-org">Anna Sudha Community Kitchens</div>
             <div class="tl-date">Aug 2024 – Present · Volunteer</div>
             <ul class="tl-bullets">
-              <li>Prepared and organized meals serving underserved communities.</li>
-              <li>Ensured operations ran smoothly with a focus on care, efficiency, and collaboration.</li>
+              <li>Prep and organize meals for underserved communities.</li>
+              <li>Keep the kitchen running — coordination, cleanup, whatever's needed.</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ======= ACHIEVEMENTS — Certifications + Competitions + Honors ======= -->
+    <!-- ============================================
+         ACHIEVEMENTS
+         ============================================ -->
     <section class="section" id="achievements">
       <div class="container">
-        <div class="section__label">Achievements</div>
-        <h2 class="section__title">Certifications, Awards &amp; Competitions</h2>
-        <p class="section__desc">Hard-earned credentials, scholarships, and hands-on cybersecurity competition experience.</p>
+        <p class="section-label">Achievements</p>
+        <h2 class="section-title">Certifications, Awards &amp; Competitions</h2>
+        <p class="section-desc">The stuff I've earned and the competitions I've placed in.</p>
 
-        <!-- Tab filter -->
-        <div style="display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap" id="filter-tabs">
-          <button class="btn btn--sm btn--primary" data-filter="all">All</button>
-          <button class="btn btn--sm btn--outline" data-filter="cert">Certifications &amp; Awards</button>
-          <button class="btn btn--sm btn--outline" data-filter="comp">Competitions</button>
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="cert">Certifications &amp; Awards</button>
+          <button class="filter-btn" data-filter="comp">Competitions</button>
         </div>
 
-        <div class="card-grid" id="achievements-grid">
-          <!-- Certifications & Awards -->
-          <article class="card" data-cat="cert">
-            <span class="card__icon"><i class="fas fa-award"></i></span>
+        <div class="achievements-grid" id="achievementsGrid">
+
+          <!-- Certifications -->
+          <article class="achievement-card" data-cat="cert">
+            <div class="achievement-type">Award</div>
             <h3>National Cyber Scholar</h3>
-            <div class="card__meta">SANS Cyber Foundations Academy Scholarship Winner · 2024</div>
-            <p>Prestigious recognition for exceptional cybersecurity knowledge, earning educational benefits and access to the Cyber Foundations Academy.</p>
+            <div class="achievement-meta">SANS Cyber Foundations Academy Scholarship · 2024</div>
+            <p>Scholarship and recognition from SANS for cybersecurity performance. Includes full access to the Cyber Foundations Academy.</p>
           </article>
-          <article class="card" data-cat="cert">
-            <span class="card__icon"><i class="fas fa-shield-halved"></i></span>
+
+          <article class="achievement-card" data-cat="cert">
+            <div class="achievement-type">Certification</div>
             <h3>IT Specialist – Cybersecurity</h3>
-            <div class="card__meta">Pearson · 2026</div>
-            <p>Industry-recognized certification validating fundamental cybersecurity knowledge, threat mitigation, and network security principles.</p>
+            <div class="achievement-meta">Pearson · 2026</div>
+            <p>Covers threat mitigation, network security fundamentals, and core cybersecurity principles.</p>
           </article>
-          <article class="card" data-cat="cert">
-            <span class="card__icon"><i class="fas fa-lock"></i></span>
+
+          <article class="achievement-card" data-cat="cert">
+            <div class="achievement-type">Certification</div>
             <h3>IT Specialist – Network Security</h3>
-            <div class="card__meta">Pearson · 2026</div>
-            <p>Industry-recognized certification validating expertise in securing network infrastructures, identifying vulnerabilities, and applying defense strategies.</p>
+            <div class="achievement-meta">Pearson · 2026</div>
+            <p>Covers securing network infrastructure, finding vulnerabilities, and applying defense strategies.</p>
           </article>
-          <article class="card" data-cat="cert">
-            <span class="card__icon"><i class="fas fa-network-wired"></i></span>
+
+          <article class="achievement-card" data-cat="cert">
+            <div class="achievement-type">Certification</div>
             <h3>IT Specialist – Networking</h3>
-            <div class="card__meta">Pearson · 2025</div>
-            <p>Industry-recognized certification validating expertise in network configuration, troubleshooting protocols, and building secure infrastructure.</p>
+            <div class="achievement-meta">Pearson · 2025</div>
+            <p>Network configuration, protocol troubleshooting, and infrastructure setup.</p>
           </article>
 
           <!-- Competitions -->
-          <article class="card" data-cat="comp">
-            <span class="card__icon"><i class="fas fa-trophy"></i></span>
+          <article class="achievement-card" data-cat="comp">
+            <div class="achievement-type">Competition</div>
             <h3>CyberPatriot</h3>
-            <div class="card__meta">Air Force Association · 2 Years</div>
-            <p>Two-year competitor achieving <strong>Platinum tier</strong> in qualifying rounds, securing and hardening Windows and Linux systems against simulated attacks.</p>
+            <div class="achievement-meta">Air Force Association · Platinum Tier · 2 Years</div>
+            <p>Two years. Hit Platinum tier. Hardened Windows and Linux boxes against simulated attacks in timed rounds.</p>
           </article>
-          <article class="card" data-cat="comp">
-            <span class="card__icon"><i class="fas fa-jet-fighter"></i></span>
+
+          <article class="achievement-card" data-cat="comp">
+            <div class="achievement-type">Competition · 3rd Place</div>
             <h3>Lockheed Martin CyberQuest</h3>
-            <div class="card__meta">3rd Place · Bethesda · 2026</div>
-            <p>Secured <strong>3rd place</strong> in Lockheed Martin's CTF competition, solving industry-relevant cybersecurity challenges designed by defense sector professionals.</p>
+            <div class="achievement-meta">Bethesda · 2026</div>
+            <p>3rd place. CTF challenges designed by Lockheed Martin's defense professionals.</p>
           </article>
-          <article class="card" data-cat="comp">
-            <span class="card__icon"><i class="fas fa-plane"></i></span>
+
+          <article class="achievement-card" data-cat="comp">
+            <div class="achievement-type">Competition · 1st Place</div>
             <h3>Cyber Security Drone Competition</h3>
-            <div class="card__meta">1st Place · GMU · 2026</div>
-            <p>Secured <strong>1st place</strong> at the inaugural CSDC at George Mason University, demonstrating expertise in drone security and exploitation.</p>
+            <div class="achievement-meta">George Mason University · 2026</div>
+            <p>Won the inaugural competition at GMU. Drone security and exploitation.</p>
           </article>
-          <article class="card" data-cat="comp">
-            <span class="card__icon"><i class="fas fa-network-wired"></i></span>
+
+          <article class="achievement-card" data-cat="comp">
+            <div class="achievement-type">Competition · 1st Place</div>
             <h3>FBLA Network Design</h3>
-            <div class="card__meta">1st Place · Regional Conference · 2026</div>
-            <p>Secured <strong>1st place</strong> in Network Design, demonstrating expertise in designing secure, efficient network infrastructures for real-world business challenges.</p>
+            <div class="achievement-meta">Regional Conference · 2026</div>
+            <p>1st place. Designed secure, efficient network infrastructure for business scenarios.</p>
           </article>
-          <article class="card" data-cat="comp">
-            <span class="card__icon"><i class="fas fa-heart"></i></span>
+
+          <article class="achievement-card" data-cat="comp">
+            <div class="achievement-type">Competition · 3rd Place</div>
             <h3>LoveBytes CTF</h3>
-            <div class="card__meta">3rd Place · Virginia Tech · 2026</div>
-            <p>Achieved <strong>3rd place</strong>, showcasing expertise in capture-the-flag challenges and cybersecurity problem-solving.</p>
+            <div class="achievement-meta">Virginia Tech · 2026</div>
+            <p>3rd place in a capture-the-flag event at Virginia Tech.</p>
           </article>
-          <article class="card" data-cat="comp">
-            <span class="card__icon"><i class="fas fa-shield-halved"></i></span>
+
+          <article class="achievement-card" data-cat="comp">
+            <div class="achievement-type">Competition · 5th Place</div>
             <h3>3C Virginia HSCyber Cup CTF</h3>
-            <div class="card__meta">5th Place · 2026</div>
-            <p>Secured <strong>5th place</strong> in a highly competitive capture-the-flag event, defending virtual networks and responding to live cyber threats.</p>
+            <div class="achievement-meta">2026</div>
+            <p>5th place. Defended virtual networks and responded to live threats in real time.</p>
           </article>
-          <article class="card" data-cat="comp">
-            <span class="card__icon"><i class="fas fa-laptop-code"></i></span>
+
+          <article class="achievement-card" data-cat="comp">
+            <div class="achievement-type">Competition · 2nd Place</div>
             <h3>Divergent Teams DC Hackathon</h3>
-            <div class="card__meta">2nd Place · Computer Science · 2025</div>
-            <p>Secured <strong>2nd place</strong> in Computer Science, demonstrating innovative problem-solving and technical skills under pressure.</p>
+            <div class="achievement-meta">Computer Science · 2025</div>
+            <p>2nd place in the CS track. Timed problem-solving under pressure.</p>
           </article>
+
         </div>
       </div>
     </section>
 
-    <!-- ======= SKILLS ======= -->
+    <!-- ============================================
+         SKILLS & EDUCATION
+         ============================================ -->
     <section class="section section--alt" id="skills">
       <div class="container">
-        <div class="section__label">Skills</div>
-        <h2 class="section__title">Technical Arsenal</h2>
-        <p class="section__desc">A versatile toolkit spanning cybersecurity, programming, and leadership.</p>
+        <p class="section-label">Skills</p>
+        <h2 class="section-title">What I Work With</h2>
+        <p class="section-desc">Security, code, and systems.</p>
 
-        <div class="skills-section__cats">
-          <div class="skill-cat">
-            <div class="skill-cat__title"><i class="fas fa-shield-halved"></i> Security</div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Security</h3>
             <div class="skill-pills">
               <span class="pill">Cybersecurity</span>
               <span class="pill">Digital Forensics</span>
@@ -272,8 +285,8 @@
               <span class="pill">Network Security</span>
             </div>
           </div>
-          <div class="skill-cat">
-            <div class="skill-cat__title"><i class="fas fa-code"></i> Languages</div>
+          <div class="skill-category">
+            <h3>Languages</h3>
             <div class="skill-pills">
               <span class="pill">Python</span>
               <span class="pill">Java</span>
@@ -282,8 +295,8 @@
               <span class="pill">JavaScript</span>
             </div>
           </div>
-          <div class="skill-cat">
-            <div class="skill-cat__title"><i class="fas fa-terminal"></i> Systems</div>
+          <div class="skill-category">
+            <h3>Systems</h3>
             <div class="skill-pills">
               <span class="pill">Bash / Linux</span>
               <span class="pill">PowerShell</span>
@@ -291,8 +304,8 @@
               <span class="pill">Game Development</span>
             </div>
           </div>
-          <div class="skill-cat">
-            <div class="skill-cat__title"><i class="fas fa-lightbulb"></i> Soft Skills</div>
+          <div class="skill-category">
+            <h3>Soft Skills</h3>
             <div class="skill-pills">
               <span class="pill">Problem Solving</span>
               <span class="pill">Team Leadership</span>
@@ -300,166 +313,147 @@
           </div>
         </div>
 
-        <!-- Education inline -->
-        <div style="margin-top:40px">
-          <div class="section__label">Education</div>
-          <h3 style="font-family:'Outfit',sans-serif;font-size:1.4rem;font-weight:600;color:var(--fg);margin-bottom:20px">Academic Background</h3>
-          <div class="card-grid">
-            <article class="card">
-              <span class="card__icon"><i class="fas fa-graduation-cap"></i></span>
+        <!-- Education -->
+        <div style="margin-top:4rem">
+          <p class="section-label">Education</p>
+          <h2 class="section-title" style="margin-bottom:var(--space-lg)">School</h2>
+
+          <div class="education-grid">
+            <div class="education-card">
               <h3>Independence High School</h3>
-              <div class="card__meta">2023 – 2027</div>
-              <p>Focus on cybersecurity, computer science, and advanced STEM coursework. Active participant in CyberPatriot, 3C Cyber Cup, and Lockheed Martin CTF teams.</p>
-            </article>
-            <article class="card">
-              <span class="card__icon"><i class="fas fa-network-wired"></i></span>
+              <div class="ed-date">2023 – 2027</div>
+              <p>Cybersecurity, CS, and STEM coursework. Compete on CyberPatriot, 3C Cyber Cup, and Lockheed Martin CTF teams.</p>
+            </div>
+            <div class="education-card">
               <h3>Academies of Loudoun</h3>
-              <div class="card__meta">MATA CISCO DE · 2026–2027</div>
-              <p>Incoming student to the Monroe Advanced Technology Academy (MATA) CISCO Dual Enrollment program, focusing on advanced networking and cybersecurity infrastructure.</p>
-            </article>
+              <div class="ed-date">MATA CISCO DE · 2026 – 2027</div>
+              <p>Starting the MATA CISCO Dual Enrollment program — advanced networking and cybersecurity infrastructure.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ======= CONNECT ======= -->
-    <section class="section" id="connect">
+    <!-- ============================================
+         PROJECTS
+         ============================================ -->
+    <section class="section" id="projects">
       <div class="container">
-        <div class="section__label">Connect</div>
-        <h2 class="section__title">Let's Build Together</h2>
-        <p class="section__desc">Follow my journey in cybersecurity, explore projects, and join the conversation on emerging tech and digital equity.</p>
+        <p class="section-label">Projects</p>
+        <h2 class="section-title">What I'm Building</h2>
+        <p class="section-desc">Side projects. Currently just one, but it's a real one.</p>
 
-        <div class="social-row">
-          <a class="social-card" href="https://www.linkedin.com/in/abhinavboora/" target="_blank" rel="noopener">
-            <div class="social-card__icon"><i class="fab fa-linkedin-in"></i></div>
-            <div class="social-card__text">
-              <strong>LinkedIn</strong>
-              <span>Professional Network</span>
+        <div class="projects-grid" style="max-width:600px">
+
+          <article class="project-card">
+            <div class="project-thumbnail">
+              <img src="img/expedikiro.png" alt="Expedikiro gameplay screenshot">
             </div>
-          </a>
-          <a class="social-card" href="https://github.com/Abhinav0234" target="_blank" rel="noopener">
-            <div class="social-card__icon"><i class="fab fa-github"></i></div>
-            <div class="social-card__text">
-              <strong>GitHub</strong>
-              <span>Code &amp; Projects</span>
+            <div class="project-info">
+              <span class="project-status">Open Source</span>
+              <h3 class="project-title">Expedikiro</h3>
+              <p class="project-desc">A Java game prototype mashing up Sekiro's combat with Expedition 33's world. Action combat systems, game architecture, and a lot of debugging.</p>
+              <div class="project-tags">
+                <span class="project-tag">Java</span>
+                <span class="project-tag">Game Dev</span>
+                <span class="project-tag">Combat Systems</span>
+              </div>
+              <a href="https://github.com/Abhinav0234/expedikiro" class="project-link" target="_blank" rel="noopener">View on GitHub <span class="arrow">→</span></a>
             </div>
-          </a>
-          <a class="social-card" href="https://www.instagram.com/realabhi2500/" target="_blank" rel="noopener">
-            <div class="social-card__icon"><i class="fab fa-instagram"></i></div>
-            <div class="social-card__text">
-              <strong>Instagram</strong>
-              <span>Personal Highlights</span>
-            </div>
-          </a>
-          <a class="social-card" href="mailto:superabhinav05@gmail.com">
-            <div class="social-card__icon"><i class="fas fa-envelope"></i></div>
-            <div class="social-card__text">
-              <strong>Email</strong>
-              <span>Get in Touch</span>
-            </div>
-          </a>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <!-- ======= CTA ======= -->
-    <section class="cta-section">
+    <!-- ============================================
+         CONNECT
+         ============================================ -->
+    <section class="section section--alt" id="connect">
       <div class="container">
-        <div class="cta-box">
-          <h2>Ready to Build Something Together?</h2>
-          <p>Cybersecurity research, digital forensics, or community tech initiatives — I'm always open to meaningful collaborations.</p>
-          <a class="btn btn--primary" href="mailto:superabhinav05@gmail.com"><i class="fas fa-paper-plane"></i> Send Me a Message</a>
+        <p class="section-label">Connect</p>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-desc">I'm around. Here's where to find me.</p>
+
+        <div class="connect-grid">
+          <a class="connect-card" href="https://www.linkedin.com/in/abhinavboora/" target="_blank" rel="noopener">
+            <strong>LinkedIn</strong>
+            <span>Professional Network</span>
+          </a>
+          <a class="connect-card" href="https://github.com/Abhinav0234" target="_blank" rel="noopener">
+            <strong>GitHub</strong>
+            <span>Code &amp; Projects</span>
+          </a>
+          <a class="connect-card" href="https://www.instagram.com/realabhi2500/" target="_blank" rel="noopener">
+            <strong>Instagram</strong>
+            <span>Personal Highlights</span>
+          </a>
+          <a class="connect-card" href="mailto:superabhinav05@gmail.com">
+            <strong>Email</strong>
+            <span>Get in Touch</span>
+          </a>
+        </div>
+
+        <div class="contact-content">
+          <p>
+            If you're working on something in cybersecurity, forensics, or anything adjacent — I'm happy to talk. Students, mentors, professionals, doesn't matter. Just reach out.
+          </p>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ======= FOOTER ======= -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Abhinav Boora. Crafted with <i class="fas fa-heart"></i> and curiosity.</p>
-      <a class="footer__top" href="#top">↑ Back to top</a>
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; <span id="year"></span> Abhinav Boora. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Abhinav0234" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/abhinavboora/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:superabhinav05@gmail.com">Email</a>
+        <a href="#top">↑ Top</a>
+      </div>
     </div>
   </footer>
 
   <script>
-  /* ---- nav toggle ---- */
-  const toggle = document.getElementById('nav-toggle');
-  const links  = document.getElementById('navLinks');
-  toggle.addEventListener('click', () => {
-    const open = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!open));
-    links.classList.toggle('navbar__links--open');
-  });
-  window.addEventListener('resize', () => {
-    if (innerWidth > 768) {
-      toggle.setAttribute('aria-expanded', 'false');
-      links.classList.remove('navbar__links--open');
-    }
-  });
-  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    toggle.setAttribute('aria-expanded', 'false');
-    links.classList.remove('navbar__links--open');
-  }));
-
-  /* ---- year ---- */
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  /* ---- reduced motion ---- */
-  if (matchMedia('(prefers-reduced-motion:reduce)').matches) document.body.classList.add('reduce-motion');
-
-  /* ---- scroll reveal ---- */
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); io.unobserve(e.target); }});
-  }, { threshold: .06, rootMargin: '0px 0px -60px 0px' });
-  document.querySelectorAll('.section').forEach(s => io.observe(s));
-
-  /* ---- typing effect ---- */
-  const phrases = [
-    'Cybersecurity Enthusiast',
-    'Digital Forensics Student',
-    'Ethical Hacker'
-  ];
-  let pi = 0, ci = 0, deleting = false;
-  const el = document.getElementById('typed-text');
-  function type() {
-    const phrase = phrases[pi];
-    if (!deleting) {
-      el.textContent = phrase.slice(0, ++ci);
-      if (ci === phrase.length) { deleting = true; setTimeout(type, 2000); return; }
-      setTimeout(type, 80);
-    } else {
-      el.textContent = phrase.slice(0, --ci);
-      if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; setTimeout(type, 400); return; }
-      setTimeout(type, 40);
-    }
-  }
-  type();
-
-  /* ---- filter tabs ---- */
-  const tabs  = document.querySelectorAll('#filter-tabs button');
-  const cards = document.querySelectorAll('#achievements-grid .card');
-  tabs.forEach(tab => tab.addEventListener('click', () => {
-    tabs.forEach(t => { t.classList.remove('btn--primary'); t.classList.add('btn--outline'); });
-    tab.classList.remove('btn--outline'); tab.classList.add('btn--primary');
-    const f = tab.dataset.filter;
-    cards.forEach(c => {
-      if (f === 'all' || c.dataset.cat === f) {
-        c.style.display = '';
-        c.style.animation = 'scaleIn .35s var(--ease) both';
-      } else {
-        c.style.display = 'none';
-        c.style.animation = '';
-      }
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
     });
-  }));
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('active'));
+    });
+    window.addEventListener('resize', () => {
+      if (innerWidth > 640) navLinks.classList.remove('active');
+    });
 
-  /* ---- navbar shrink on scroll ---- */
-  const nav = document.getElementById('main-nav');
-  window.addEventListener('scroll', () => {
-    nav.style.background = scrollY > 80 ? 'rgba(5,5,6,.88)' : 'rgba(5,5,6,.70)';
-  }, { passive: true });
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Achievement filter tabs
+    const tabs  = document.querySelectorAll('#filterTabs .filter-btn');
+    const cards = document.querySelectorAll('#achievementsGrid .achievement-card');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const f = tab.dataset.filter;
+        cards.forEach(c => {
+          if (f === 'all' || c.dataset.cat === f) {
+            c.classList.remove('hidden');
+          } else {
+            c.classList.add('hidden');
+          }
+        });
+      });
+    });
   </script>
+
 </body>
 </html>
