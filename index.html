@@ -7,6 +7,7 @@
   <meta name="description" content="Abhinav Boora – National Cyber Scholar, cybersecurity competitor, and digital forensics student based in Virginia.">
   <meta name="keywords" content="cybersecurity, digital forensics, ethical hacking, student, portfolio">
   <meta name="author" content="Abhinav Boora">
+  <meta name="theme-color" content="#173c44">
   <meta property="og:title" content="Abhinav Boora | Cybersecurity & Digital Forensics">
   <meta property="og:description" content="National Cyber Scholar. CTF competitor. Digital forensics student. Based in Virginia.">
   <meta property="og:type" content="website">
@@ -16,23 +17,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- ============================================
        HEADER
        ============================================ -->
   <header class="site-header" id="header">
     <div class="container header-inner">
-      <a href="#top" class="site-logo">Abhinav Boora</a>
-      <nav>
+      <a href="#top" class="site-logo"><span class="logo-mark" aria-hidden="true">ab.</span> Abhinav Boora</a>
+      <nav aria-label="Main navigation">
         <ul class="nav-links" id="navLinks">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#connect">Connect</a></li>
         </ul>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
         <span></span>
         <span></span>
         <span></span>
@@ -47,19 +50,21 @@
     <div class="container hero-inner">
       <div class="hero-content">
         <p class="hero-label">Cybersecurity &amp; Digital Forensics</p>
-        <h1 class="hero-title">Hi, I'm Abhinav Boora.</h1>
+        <h1 class="hero-title">Hi, I'm<br><span>Abhinav Boora.</span></h1>
         <p class="hero-subtitle">
           National Cyber Scholar. I compete in CTFs, study digital forensics, and break things to learn how to defend them. Currently a high school student in Virginia focused on security, law, and making tech more accessible.
         </p>
         <div class="hero-actions">
-          <a href="#experience" class="btn-primary">See What I've Done</a>
-          <a href="#projects" class="btn-outline">View Projects</a>
+          <a href="#experience" class="btn-primary">See What I've Done <span aria-hidden="true">↗</span></a>
+          <a href="#projects" class="btn-outline">View Projects <span aria-hidden="true">→</span></a>
         </div>
+        <p class="hero-note"><span aria-hidden="true"></span> Based in Virginia · Driven by curiosity</p>
       </div>
       <div class="hero-image-wrapper">
         <div class="hero-headshot">
           <img src="img/headshot.jpg" alt="Abhinav Boora">
         </div>
+        <div class="portrait-caption"><span>Student. Builder. Problem solver.</span><span aria-hidden="true">↗</span></div>
       </div>
     </div>
   </section>
@@ -88,7 +93,7 @@
     </div>
   </div>
 
-  <main>
+  <main id="main">
 
     <!-- ============================================
          ABOUT
@@ -125,16 +130,16 @@
     <!-- ============================================
          ACHIEVEMENTS
          ============================================ -->
-    <section class="section" id="achievements">
+    <section class="section section--alt" id="achievements">
       <div class="container">
         <p class="section-label">Achievements</p>
         <h2 class="section-title">Certifications, Awards &amp; Competitions</h2>
         <p class="section-desc">The stuff I've earned and the competitions I've placed in.</p>
 
         <div class="filter-tabs" id="filterTabs">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="cert">Certifications &amp; Awards</button>
-          <button class="filter-btn" data-filter="comp">Competitions</button>
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="cert" aria-pressed="false">Certifications &amp; Awards</button>
+          <button class="filter-btn" data-filter="comp" aria-pressed="false">Competitions</button>
         </div>
 
         <div class="achievements-grid" id="achievementsGrid">
@@ -172,8 +177,8 @@
           <article class="achievement-card" data-cat="comp">
             <div class="achievement-type">Competition</div>
             <h3>CyberPatriot</h3>
-            <div class="achievement-meta">Air Force Association · Platinum Tier · 2 Years</div>
-            <p>Two years. Hit Platinum tier. Hardened Windows and Linux boxes against simulated attacks in timed rounds.</p>
+            <div class="achievement-meta">Air Force Association · Platinum Tier · 3 Years</div>
+            <p>Three years. Hit Platinum tier. Hardened Windows and Linux boxes against simulated attacks in timed rounds.</p>
           </article>
 
           <article class="achievement-card" data-cat="comp">
@@ -225,7 +230,7 @@
     <!-- ============================================
          SKILLS & EDUCATION
          ============================================ -->
-    <section class="section section--alt" id="skills">
+    <section class="section" id="skills">
       <div class="container">
         <p class="section-label">Skills</p>
         <h2 class="section-title">What I Work With</h2>
@@ -271,9 +276,9 @@
         </div>
 
         <!-- Education -->
-        <div style="margin-top:4rem">
+        <div class="education-block">
           <p class="section-label">Education</p>
-          <h2 class="section-title" style="margin-bottom:var(--space-lg)">School</h2>
+          <h2 class="section-title">School</h2>
 
           <div class="education-grid">
             <div class="education-card">
@@ -351,24 +356,30 @@
       <div class="container">
         <p class="section-label">Projects</p>
         <h2 class="section-title">What I'm Building</h2>
-        <p class="section-desc">Side projects. Currently just one, but it's a real one.</p>
+        <p class="section-desc">Game development, creative experiments, and ideas in progress.</p>
 
-        <div class="projects-grid" style="max-width:600px">
+        <a class="text-link project-directory-link" href="projects.html">Explore creative projects <span aria-hidden="true">&#8599;</span></a>
+        <div class="projects-grid projects-grid--featured">
+          <article class="detail-card">
+            <span class="project-status">In Development</span>
+            <h3>Codename: Unfolded — Horror Game</h3>
+            <p>I'm developing a horror game in Unreal Engine 5 under the working codename Unfolded. The official title is still undecided. More info coming soon.</p>
+          </article>
 
           <article class="project-card">
             <div class="project-thumbnail">
-              <img src="img/expedikiro.png" alt="Expedikiro gameplay screenshot">
+              <img src="img/expedikiro.png" alt="Expedikiro gameplay screenshot" loading="lazy">
             </div>
             <div class="project-info">
               <span class="project-status">Open Source</span>
               <h3 class="project-title">Expedikiro</h3>
-              <p class="project-desc">A Java game prototype mashing up Sekiro's combat with Expedition 33's world. Action combat systems, game architecture, and a lot of debugging.</p>
+              <p class="project-desc">A Java game prototype combining the combat systems of Sekiro and Expedition 33. Combat mechanics, game architecture, and a lot of debugging.</p>
               <div class="project-tags">
                 <span class="project-tag">Java</span>
                 <span class="project-tag">Game Dev</span>
                 <span class="project-tag">Combat Systems</span>
               </div>
-              <a href="https://github.com/Abhinav0234/expedikiro" class="project-link" target="_blank" rel="noopener">View on GitHub <span class="arrow">→</span></a>
+              <a href="https://github.com/Abhinav0234/expedikiro" class="project-link" target="_blank" rel="noopener">View on GitHub <span class="arrow" aria-hidden="true">→</span></a>
             </div>
           </article>
 
@@ -429,41 +440,7 @@
     </div>
   </footer>
 
-  <script>
-    // Mobile nav toggle
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => navLinks.classList.remove('active'));
-    });
-    window.addEventListener('resize', () => {
-      if (innerWidth > 640) navLinks.classList.remove('active');
-    });
-
-    // Year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Achievement filter tabs
-    const tabs  = document.querySelectorAll('#filterTabs .filter-btn');
-    const cards = document.querySelectorAll('#achievementsGrid .achievement-card');
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
-        const f = tab.dataset.filter;
-        cards.forEach(c => {
-          if (f === 'all' || c.dataset.cat === f) {
-            c.classList.remove('hidden');
-          } else {
-            c.classList.add('hidden');
-          }
-        });
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
