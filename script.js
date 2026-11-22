@@ -68,25 +68,17 @@ updateHeader();
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
 
-// Project selection updates the physical stack and the matching readable spread.
+// Project selection keeps the work section in place while changing its spread.
 const projectNames = ['indy', 'unfolded', 'expedikiro'];
 const panels = [...document.querySelectorAll('[data-project]')];
-const covers = [...document.querySelectorAll('[data-cover]')];
 const projectButtons = [...document.querySelectorAll('[data-project-select]')];
-const deckButtons = [...document.querySelectorAll('[data-deck-select]')];
 let selectedProject = 'indy';
 
 function selectProject(name, { animate = true } = {}) {
   if (!projectNames.includes(name) || !panels.length) return;
   const changed = selectedProject !== name;
   selectedProject = name;
-  const selectedIndex = projectNames.indexOf(name);
-  covers.forEach(cover => {
-    const position = (projectNames.indexOf(cover.dataset.cover) - selectedIndex + projectNames.length) % projectNames.length;
-    cover.dataset.place = ['front', 'left', 'right'][position];
-  });
   projectButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.projectSelect === name)));
-  deckButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.deckSelect === name)));
   panels.forEach(panel => {
     const active = panel.dataset.project === name;
     panel.hidden = !active;
@@ -99,34 +91,14 @@ function selectProject(name, { animate = true } = {}) {
 
 if (panels.length) {
   document.querySelector('.project-picker').hidden = false;
-  document.querySelector('.deck-picker').hidden = false;
   const initial = location.hash.replace('#project-', '');
   selectProject(projectNames.includes(initial) ? initial : 'indy', { animate: false });
   projectButtons.forEach(button => button.addEventListener('click', () => selectProject(button.dataset.projectSelect)));
-  deckButtons.forEach(button => button.addEventListener('click', () => selectProject(button.dataset.deckSelect)));
-  covers.forEach(cover => cover.addEventListener('click', event => {
-    event.preventDefault();
-    selectProject(cover.dataset.cover);
-    history.replaceState(null, '', `#project-${cover.dataset.cover}`);
-    document.getElementById('projects').scrollIntoView({ behavior: motionAllowed() ? 'smooth' : 'instant', block: 'start' });
-  }));
   window.addEventListener('hashchange', () => {
     const name = location.hash.replace('#project-', '');
     if (projectNames.includes(name)) selectProject(name);
   });
 }
-
-// Pointer response stays inside the artwork; click targets do not chase the cursor.
-const deck = document.querySelector('[data-deck]');
-let tiltFrame = 0;
-deck?.addEventListener('pointermove', event => {
-  if (!motionAllowed() || event.pointerType === 'touch') return;
-  const box = deck.getBoundingClientRect();
-  const tilt = ((event.clientX - box.left) / box.width - .5) * 14;
-  cancelAnimationFrame(tiltFrame);
-  tiltFrame = requestAnimationFrame(() => deck.style.setProperty('--tilt', `${tilt.toFixed(2)}deg`));
-});
-deck?.addEventListener('pointerleave', () => { cancelAnimationFrame(tiltFrame); deck.style.setProperty('--tilt', '0deg'); });
 
 // A quiet, one-time entrance when a section actually reaches the viewport.
 if ('IntersectionObserver' in window && motionAllowed()) {

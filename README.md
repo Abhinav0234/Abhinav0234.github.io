@@ -20,13 +20,13 @@ Open http://127.0.0.1:8080. Both `index.html` and `projects.html` work with this
 - `projects.html`: the project notebook, with stable anchors for IndyHAX, Unfolded, and Expedikiro.
 - `style.css`: shared design, responsive layout, and CSS animation.
 - `script.js`: navigation, project selection, achievement filters, and optional motion.
-- `img/`: portrait, gameplay screenshot, and the actual IndyHAX logo from [indyhax.com](https://indyhax.com/logo.PNG).
+- `img/`: CyberQuest hero photo, portrait, gameplay screenshot, and the actual IndyHAX logo from [indyhax.com](https://indyhax.com/logo.PNG).
 - `favicon.svg`: the site monogram.
 - `CNAME`: the existing custom domain. Keep this file when deploying to GitHub Pages.
 
 ## Interaction and accessibility
 
-Project covers and project selectors keep the selected work in sync. Every project and credential remains readable when JavaScript is unavailable. The mobile menu supports Escape and closes after navigation. All controls use native links or buttons with visible keyboard focus.
+The hero pairs a CyberQuest photo with the introduction. Project selectors below it change the selected work without moving the reader. Every project and credential remains readable when JavaScript is unavailable. The mobile menu supports Escape and closes after navigation. All controls use native links or buttons with visible keyboard focus.
 
 Animations respect `prefers-reduced-motion`. Visitors can also turn motion off using the header control; the choice is stored locally, with no analytics or third-party tracking. If local storage is blocked, the choice lasts for the current page.
 
@@ -34,4 +34,4 @@ Google Fonts supplies Newsreader and DM Sans. System font fallbacks work when fo
 
 ## Editing
 
-Project content lives in HTML; JavaScript selects the corresponding article rather than keeping a second copy of its text. To change achievements, edit the rows under `achievementsGrid` and retain `data-cat="cert"` or `data-cat="comp"` for filtering. If adding a project, update the cover, selectors, article, and `projectNames` list in `script.js`.
+Project content lives in HTML; JavaScript selects the corresponding article rather than keeping a second copy of its text. To change achievements, edit the rows under `achievementsGrid` and retain `data-cat="cert"` or `data-cat="comp"` for filtering. If adding a project, update the selectors, article, and `projectNames` list in `script.js`.
