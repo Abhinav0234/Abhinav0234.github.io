@@ -20,7 +20,7 @@ Open http://127.0.0.1:8080. Both `index.html` and `projects.html` work with this
 - `projects.html`: the project notebook, with stable anchors for IndyHAX, Unfolded, and Expedikiro.
 - `style.css`: shared design, responsive layout, and CSS animation.
 - `script.js`: navigation, project selection, achievement filters, and optional motion.
-- `img/`: original portrait and gameplay screenshot.
+- `img/`: portrait, gameplay screenshot, and the actual IndyHAX logo from [indyhax.com](https://indyhax.com/logo.PNG).
 - `favicon.svg`: the site monogram.
 - `CNAME`: the existing custom domain. Keep this file when deploying to GitHub Pages.
 

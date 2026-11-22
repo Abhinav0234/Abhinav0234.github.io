@@ -330,8 +330,7 @@ h2 em,h1 em {
 }
 .cover-indy {
   background:var(--lime);
-  color:var(--ink);
-  container-type:inline-size
+  color:var(--ink)
 }
 .cover-unfolded {
   background:var(--ink)
@@ -358,22 +357,17 @@ h2 em,h1 em {
   inset:70px 0 88px;
   pointer-events:none
 }
-.project-cover .indy-wordmark {
-  inset:76px 20px auto;
-  font:500 3rem/.86 var(--display);
-  font-size:clamp(2.25rem,25cqw,3.6rem);
-  letter-spacing:-.06em;
-  transform:rotate(-4deg);
+.project-cover .indy-logo-art {
+  inset:53px 28px 90px
+}
+.indy-logo-art img {
+  width:100%;
+  height:100%;
+  object-fit:contain;
   transition:transform 750ms var(--ease)
 }
-.indy-wordmark em {
-  font-weight:400
-}
-.project-cover:hover .indy-wordmark {
-  transform:rotate(1deg) translate(3px,-3px)
-}
-.cover-indy .cover-caption {
-  margin-top:auto
+.project-cover:hover .indy-logo-art img {
+  transform:rotate(-6deg) scale(1.025)
 }
 .art-door>span {
   position:absolute;
@@ -524,18 +518,20 @@ h2 em,h1 em {
   background:var(--lime);
   color:var(--ink)
 }
-.indy-poster {
-  font:500 clamp(3.5rem,6vw,5.3rem)/.86 var(--display);
-  letter-spacing:-.06em;
-  margin-block:22px;
-  transform:rotate(-4deg);
+.indy-logo {
+  flex:1;
+  display:grid;
+  place-items:center;
+  min-height:260px;
+  padding-block:10px
+}
+.indy-logo img {
+  width:min(78%,280px);
+  height:auto;
   transition:transform 700ms var(--ease)
 }
-.indy-poster em {
-  font-weight:400
-}
-.visual-indy:hover .indy-poster {
-  transform:rotate(2deg) translateX(8px)
+.visual-indy:hover .indy-logo img {
+  transform:rotate(-4deg) translateY(-4px)
 }
 .visual-unfolded {
   background:var(--ink);
@@ -916,9 +912,6 @@ h2 em,h1 em {
 .notebook-layout .work-visual {
   min-height:450px
 }
-.notebook-layout .indy-poster {
-  font-size:5.8rem
-}
 .notebook-layout .door-scene {
   height:290px
 }
@@ -1051,9 +1044,6 @@ html[data-motion=off] .project-cover[data-place=front] {
   }
   .notebook-layout {
     gap:45px
-  }
-  .notebook-layout .indy-poster {
-    font-size:5rem
   }
 }
 @media(max-width:800px) {
@@ -1195,9 +1185,6 @@ html[data-motion=off] .project-cover[data-place=front] {
   }
   .notebook-layout .work-visual {
     min-height:400px
-  }
-  .notebook-layout .indy-poster {
-    font-size:4rem
   }
   .notebook-layout .visual-bottom {
     font-size:.68rem
@@ -1352,9 +1339,6 @@ html[data-motion=off] .project-cover[data-place=front] {
   .project-stage {
     min-height:0
   }
-  .indy-poster {
-    font-size:4.8rem
-  }
   .about-section {
     padding-block:65px
   }
@@ -1506,9 +1490,6 @@ html[data-motion=off] .project-cover[data-place=front] {
   }
   .notebook-layout .work-visual {
     min-height:380px
-  }
-  .notebook-layout .indy-poster {
-    font-size:5.1rem
   }
   .entry-facts {
     margin-bottom:30px
