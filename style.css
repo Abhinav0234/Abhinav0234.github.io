@@ -330,7 +330,8 @@ h2 em,h1 em {
 }
 .cover-indy {
   background:var(--lime);
-  color:var(--ink)
+  color:var(--ink);
+  container-type:inline-size
 }
 .cover-unfolded {
   background:var(--ink)
@@ -357,16 +358,22 @@ h2 em,h1 em {
   inset:70px 0 88px;
   pointer-events:none
 }
-.art-indy>span {
-  position:absolute;
-  inset:12px 68px;
-  background:currentColor;
-  clip-path:polygon(35% 0,65% 0,65% 35%,100% 35%,100% 65%,65% 65%,65% 100%,35% 100%,35% 65%,0 65%,0 35%,35% 35%);
-  transform:rotate(-12deg);
-  transition:transform 800ms var(--ease)
+.project-cover .indy-wordmark {
+  inset:76px 20px auto;
+  font:500 3rem/.86 var(--display);
+  font-size:clamp(2.25rem,25cqw,3.6rem);
+  letter-spacing:-.06em;
+  transform:rotate(-4deg);
+  transition:transform 750ms var(--ease)
 }
-.project-cover:hover .art-indy>span {
-  transform:rotate(78deg)
+.indy-wordmark em {
+  font-weight:400
+}
+.project-cover:hover .indy-wordmark {
+  transform:rotate(1deg) translate(3px,-3px)
+}
+.cover-indy .cover-caption {
+  margin-top:auto
 }
 .art-door>span {
   position:absolute;
@@ -1018,9 +1025,6 @@ html[data-motion=off] .project-cover[data-place=front] {
   .cover-art {
     inset:65px 0 90px
   }
-  .art-indy>span {
-    inset:12px 55px
-  }
   .project-cover[data-place=left] {
     transform:translate(-28px,9px) rotate(-12deg) scale(.95)
   }
@@ -1099,9 +1103,6 @@ html[data-motion=off] .project-cover[data-place=front] {
   }
   .cover-art {
     inset:58px 0 80px
-  }
-  .art-indy>span {
-    inset:9px 46px
   }
   .art-door>span {
     width:76px;
