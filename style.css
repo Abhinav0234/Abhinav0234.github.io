@@ -74,9 +74,6 @@ button:focus-visible,a:focus-visible  {
 .section  {
   padding-block:110px
 }
-.section-compact  {
-  padding-top:36px
-}
 .eyebrow  {
   font-size:.75rem;
   font-weight:500;
@@ -99,17 +96,6 @@ h2  {
 }
 h2 em,h1 em  {
   font-weight:400;
-  color:var(--accent)
-}
-.text-link  {
-  font-size:.9rem;
-  font-weight:500;
-  text-decoration:none;
-  border-bottom:1px solid currentColor;
-  padding-bottom:3px;
-  transition:color 180ms
-}
-.text-link:hover  {
   color:var(--accent)
 }
 .button  {
@@ -288,18 +274,20 @@ h2 em,h1 em  {
   animation-delay:110ms
 }
 .hero-description  {
-  max-width:395px;
+  max-width:440px;
   color:var(--muted);
-  margin-block:28px
+  margin-block:28px 18px
 }
 .hero-description strong  {
   font-weight:500;
   color:var(--ink)
 }
-.hero-footnote  {
-  margin-top:22px;
-  font-size:.75rem;
-  color:var(--muted)
+.hero-education {
+  max-width:440px;
+  color:var(--muted);
+  font-size:.8rem;
+  line-height:1.6;
+  margin-bottom:25px
 }
 .hero-photo  {
   position:absolute;
@@ -354,9 +342,6 @@ h2 em,h1 em  {
 }
 .section-heading .eyebrow  {
   margin-bottom:15px
-}
-.section-heading>.text-link  {
-  flex-shrink:0
 }
 .section-aside  {
   font-size:.9rem;
@@ -517,89 +502,7 @@ h2 em,h1 em  {
   flex-wrap:wrap
 }
 
-/* A real person, followed by the evidence. */
-.about-section  {
-  background:#e9ece1;
-  padding-block:105px
-}
-.about-grid  {
-  display:grid;
-  grid-template-columns:.9fr 1.1fr;
-  gap:110px;
-  align-items:center
-}
-.portrait  {
-  position:relative;
-  background:#fffef8;
-  padding:14px 14px 0;
-  box-shadow:0 12px 30px #24372d12;
-  transform:rotate(-4deg);
-  transition:transform 800ms var(--ease);
-  max-width:390px
-}
-.portrait:hover  {
-  transform:rotate(0)
-}
-.portrait img  {
-  width:100%;
-  aspect-ratio:1/1.08;
-  object-fit:cover
-}
-.portrait figcaption  {
-  padding-block:18px;
-  font:400 italic 1.3rem/1.2 var(--display);
-  text-align:center;
-  color:var(--ink)
-}
-.portrait-sticker  {
-  position:absolute;
-  right:-35px;
-  bottom:35px;
-  width:106px;
-  height:106px;
-  border-radius:50%;
-  background:var(--lime);
-  display:grid;
-  place-content:center;
-  text-align:center;
-  font:400 italic 1.3rem/1.05 var(--display);
-  transform:rotate(12deg)
-}
-.about-copy .eyebrow  {
-  margin-bottom:17px
-}
-.about-copy h2  {
-  margin-bottom:26px
-}
-.about-copy>p:not(.eyebrow)  {
-  color:var(--muted);
-  margin-bottom:18px
-}
-.about-copy>.text-link  {
-  display:inline-block;
-  margin-top:7px
-}
-.featured-highlights  {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:40px;
-  padding-block:10px 40px
-}
-.highlight-result  {
-  display:block;
-  font:400 italic clamp(2.4rem,4vw,3.8rem)/1 var(--display);
-  letter-spacing:-.04em;
-  color:var(--accent);
-  margin-bottom:16px
-}
-.featured-highlights h3  {
-  font:500 1rem/1.35 var(--body);
-  margin-bottom:7px
-}
-.featured-highlights p  {
-  font-size:.8rem;
-  color:var(--muted)
-}
+/* Achievements, ordered by recognition and result. */
 .filter-tabs  {
   display:flex;
   gap:22px;
@@ -650,60 +553,6 @@ h2 em,h1 em  {
   text-align:right;
   white-space:nowrap
 }
-.split-heading  {
-  display:grid;
-  grid-template-columns:.75fr 1.25fr;
-  gap:90px
-}
-.split-heading .eyebrow  {
-  margin-bottom:15px
-}
-.experience-row  {
-  padding-block:25px;
-  border-top:1px solid var(--line)
-}
-.experience-row:last-child  {
-  border-bottom:1px solid var(--line)
-}
-.experience-top  {
-  display:flex;
-  align-items:baseline;
-  justify-content:space-between;
-  gap:10px;
-  flex-wrap:wrap
-}
-.experience-top h3  {
-  font:500 1rem/1.5 var(--body)
-}
-.experience-top span  {
-  font-size:.75rem;
-  color:var(--accent)
-}
-.experience-row .experience-date  {
-  font-size:.75rem;
-  color:var(--muted);
-  margin-block:6px 12px
-}
-.experience-row>p:last-child  {
-  color:var(--muted);
-  font-size:.9rem
-}
-.education-list h3  {
-  font:500 1rem/1.5 var(--body);
-  margin-bottom:10px
-}
-.education-list p  {
-  font-size:.9rem;
-  color:var(--muted)
-}
-.education-list  {
-  padding-top:28px;
-  border-top:1px solid var(--line);
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:60px
-}
-
 /* An open invitation instead of a wall of social cards. */
 .contact-section  {
   background:var(--ink);
@@ -766,92 +615,6 @@ h2 em,h1 em  {
   text-decoration:none
 }
 
-/* Project notebook: the same studio, with space to read. */
-.notebook-hero  {
-  padding-block:75px 65px;
-  border-bottom:1px solid var(--line)
-}
-.notebook-hero .eyebrow  {
-  margin-bottom:25px
-}
-.notebook-hero h1  {
-  font:400 clamp(3.5rem,7.5vw,6.8rem)/.96 var(--display);
-  letter-spacing:-.05em
-}
-.notebook-hero>p:not(.eyebrow)  {
-  max-width:520px;
-  color:var(--muted);
-  margin-block:28px
-}
-.notebook-index  {
-  display:flex;
-  gap:28px;
-  flex-wrap:wrap
-}
-.notebook-index a  {
-  font-size:.9rem
-}
-.notebook-entry  {
-  padding-block:90px;
-  border-bottom:1px solid var(--line)
-}
-.entry-heading  {
-  margin-bottom:40px
-}
-.entry-heading .eyebrow  {
-  margin-bottom:18px
-}
-.entry-heading h2 em  {
-  font-weight:400
-}
-.entry-heading>p:last-child  {
-  color:var(--muted);
-  margin-top:15px
-}
-.notebook-layout  {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:75px;
-  align-items:start
-}
-.notebook-layout .work-visual  {
-  min-height:450px
-}
-.notebook-layout .door-scene  {
-  height:290px
-}
-.entry-facts  {
-  border-top:1px solid var(--line);
-  margin-bottom:35px
-}
-.entry-facts>div  {
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
-  padding-block:11px;
-  border-bottom:1px solid var(--line);
-  font-size:.8rem
-}
-.entry-facts span  {
-  color:var(--muted)
-}
-.entry-facts strong  {
-  font-weight:500;
-  text-align:right
-}
-.entry-copy h3  {
-  font-size:2rem;
-  line-height:1.15;
-  letter-spacing:-.025em;
-  margin-bottom:18px
-}
-.entry-copy>p  {
-  margin-bottom:18px;
-  color:var(--muted)
-}
-.entry-copy>.button,.entry-copy>.text-link  {
-  margin-top:12px
-}
 
 /* Motion is an enhancement: readable by default, controllable at any time. */
 .js .reveal.is-pending  {
@@ -864,12 +627,6 @@ h2 em,h1 em  {
 .js .reveal.is-visible  {
   opacity:1;
   transform:translateY(0)
-}
-.js .portrait.reveal.is-visible  {
-  transform:rotate(-4deg)
-}
-.js .portrait.reveal.is-visible:hover  {
-  transform:rotate(0)
 }
 @keyframes title-in  {
   from  {
@@ -916,15 +673,6 @@ html[data-motion=off] .reveal.is-pending  {
   }
   .work-visual  {
     min-height:375px
-  }
-  .about-grid  {
-    gap:75px
-  }
-  .split-heading  {
-    gap:55px
-  }
-  .notebook-layout  {
-    gap:45px
   }
 }
 @media(max-width:800px)  {
@@ -983,56 +731,15 @@ html[data-motion=off] .reveal.is-pending  {
   .link-row .button  {
     padding-inline:18px
   }
-  .about-section  {
-    padding-block:80px
-  }
-  .about-grid  {
-    gap:55px;
-    grid-template-columns:.9fr 1.1fr
-  }
-  .about-copy h2  {
-    font-size:2.8rem
-  }
-  .about-copy p:not(.eyebrow)  {
-    font-size:.9rem
-  }
-  .portrait-sticker  {
-    right:-20px;
-    width:83px;
-    height:83px;
-    font-size:1.1rem
-  }
-  .featured-highlights  {
-    gap:25px
-  }
-  .featured-highlights h3  {
-    font-size:.9rem
-  }
-  .achievement-row  {
+.achievement-row  {
     grid-template-columns:112px 1fr 55px;
     gap:18px
   }
-  .split-heading  {
-    grid-template-columns:1fr;
-    gap:35px
-  }
-  .split-heading h2 br  {
-    display:none
-  }
-  .contact-inner  {
+.contact-inner  {
     gap:50px
   }
   .contact-section  {
     padding-block:75px
-  }
-  .notebook-layout  {
-    gap:35px
-  }
-  .notebook-layout .work-visual  {
-    min-height:400px
-  }
-  .notebook-layout .visual-bottom  {
-    font-size:.68rem
   }
 }
 @media(max-width:620px)  {
@@ -1108,10 +815,7 @@ html[data-motion=off] .reveal.is-pending  {
     max-width:390px;
     margin-block:23px
   }
-  .hero-footnote  {
-    margin-top:17px
-  }
-  .proof-strip  {
+.proof-strip  {
     gap:7px 22px;
     justify-content:flex-start;
     font-size:.7rem;
@@ -1167,48 +871,7 @@ html[data-motion=off] .reveal.is-pending  {
   .project-stage  {
     min-height:0
   }
-  .about-section  {
-    padding-block:65px
-  }
-  .about-grid  {
-    grid-template-columns:1fr;
-    gap:52px
-  }
-  .portrait  {
-    width:80%;
-    margin-inline:auto;
-    max-width:350px
-  }
-  .about-copy h2  {
-    font-size:2.9rem
-  }
-  .about-copy>p:not(.eyebrow)  {
-    font-size:1rem
-  }
-  .featured-highlights  {
-    grid-template-columns:1fr;
-    gap:25px;
-    padding-block:5px 20px
-  }
-  .featured-highlights>div  {
-    display:grid;
-    grid-template-columns:125px 1fr;
-    column-gap:20px;
-    align-items:start
-  }
-  .highlight-result  {
-    grid-row:1/3;
-    font-size:2.2rem;
-    white-space:nowrap;
-    margin-bottom:0
-  }
-  .featured-highlights h3  {
-    font-size:.9rem
-  }
-  .featured-highlights p  {
-    font-size:.75rem
-  }
-  .filter-tabs  {
+.filter-tabs  {
     gap:20px;
     margin-top:15px
   }
@@ -1241,24 +904,7 @@ html[data-motion=off] .reveal.is-pending  {
   .achievement-row p  {
     font-size:.78rem
   }
-  .section-compact  {
-    padding-top:15px
-  }
-  .experience-top h3  {
-    font-size:1rem
-  }
-  .experience-top span  {
-    font-size:.75rem
-  }
-  .experience-row>p:last-child  {
-    font-size:.95rem
-  }
-  .education-list  {
-    grid-template-columns:1fr;
-    gap:25px;
-    padding-top:26px
-  }
-  .contact-inner  {
+.contact-inner  {
     grid-template-columns:1fr;
     gap:37px
   }
@@ -1286,47 +932,6 @@ html[data-motion=off] .reveal.is-pending  {
     align-items:start;
     padding-block:24px;
     gap:10px
-  }
-  .site-footer>p:nth-child(2)  {
-    order:3;
-    width:100%
-  }
-  .notebook-hero  {
-    padding-block:45px
-  }
-  .notebook-hero h1  {
-    font-size:clamp(3rem,10.4vw,4.4rem)
-  }
-  .notebook-hero>p:not(.eyebrow)  {
-    font-size:1rem
-  }
-  .notebook-index  {
-    gap:22px
-  }
-  .notebook-index a  {
-    min-height:44px
-  }
-  .notebook-entry  {
-    padding-block:60px
-  }
-  .notebook-layout  {
-    grid-template-columns:1fr;
-    gap:30px
-  }
-  .entry-heading h2  {
-    font-size:2.8rem
-  }
-  .notebook-layout .work-visual  {
-    min-height:380px
-  }
-  .entry-facts  {
-    margin-bottom:30px
-  }
-  .entry-copy h3  {
-    font-size:2.3rem
-  }
-  .entry-copy>p  {
-    font-size:1rem
   }
 }
 @media(prefers-reduced-motion:reduce)  {

@@ -12,15 +12,15 @@ Run from the repository root:
 python -m http.server 8080 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:8080. Both `index.html` and `projects.html` work with this server.
+Open http://127.0.0.1:8080. The website is a single page.
 
 ## Files
 
-- `index.html`: selected work, about, achievements, experience, education, and contact.
-- `projects.html`: the project notebook, with stable anchors for IndyHAX, Unfolded, and Expedikiro.
+- `index.html`: introduction and education, selected work, achievements, and contact.
+- `projects.html`: a small compatibility redirect for old project URLs.
 - `style.css`: shared design, responsive layout, and CSS animation.
 - `script.js`: navigation, project selection, achievement filters, and optional motion.
-- `img/`: CyberQuest hero photo, portrait, gameplay screenshot, and the actual IndyHAX logo from [indyhax.com](https://indyhax.com/logo.PNG).
+- `img/`: CyberQuest hero photo, gameplay screenshot, and the actual IndyHAX logo from [indyhax.com](https://indyhax.com/logo.PNG). The logo and gameplay image use lossless WebP encoding with identical pixels to the original PNG files.
 - `favicon.svg`: the site monogram.
 - `CNAME`: the existing custom domain. Keep this file when deploying to GitHub Pages.
 

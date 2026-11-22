@@ -11,13 +11,13 @@
   <meta property="og:description" content="CTFs, game worlds, and bringing people together. Explore what I'm building and learning.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://abhiboora.com/">
-  <meta property="og:image" content="https://abhiboora.com/img/headshot.jpg">
+  <meta property="og:image" content="https://abhiboora.com/img/cyberquest-stage.jpg">
   <link rel="canonical" href="https://abhiboora.com/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=7">
+  <link rel="stylesheet" href="style.css?v=8">
   <script src="script.js?v=2" defer></script>
 </head>
 <body class="home">
@@ -26,7 +26,7 @@
     <div class="container header-inner">
       <a class="wordmark" href="#top" aria-label="Abhinav Boora, home">abhi<span>.</span></a>
       <nav class="main-nav" aria-label="Main navigation" id="navLinks">
-        <a href="#projects">Work</a><a href="#about">About</a><a href="#achievements">Highlights</a><a href="#connect">Say hello</a>
+        <a href="#projects">Work</a><a href="#achievements">Achievements</a><a href="#connect">Say hello</a>
       </nav>
       <div class="header-controls">
         <button class="motion-toggle" type="button" aria-pressed="true" hidden>Motion <span>on</span></button>
@@ -43,16 +43,16 @@
       <div class="hero-inner container"><div class="hero-copy">
         <p class="eyebrow">Abhinav Boora <span class="eyebrow-divider">/</span> Virginia, USA</p>
         <h1 id="hero-title"><span class="line-mask"><span>I like figuring</span></span><span class="line-mask"><span>things <em>out.</em></span></span></h1>
-        <p class="hero-description"><strong>CTFs, game worlds, and bringing people together.</strong> I'm a student exploring cybersecurity and building things along the way.</p>
+        <p class="hero-description"><strong>I'm a student in Virginia focused on cybersecurity and digital forensics.</strong> I compete in CTFs, train through SANS, and build games in Java and Unreal Engine 5.</p>
+        <p class="hero-education">Independence High School · Class of 2027<br>Academies of Loudoun · MATA CISCO DE, 2026–2027</p>
         <a class="button button-dark" href="#projects">Explore my work</a>
-        <p class="hero-footnote">Security-minded. Easily curious.</p>
       </div></div>
     </section>
 
     <div class="proof-strip container" aria-label="A few highlights"><span>National Cyber Scholar</span><span>CyberPatriot · Platinum tier</span><span>IndyHAX · Co-founder</span></div>
 
     <section class="section container" id="projects" aria-labelledby="work-heading">
-      <div class="section-heading reveal"><div><p class="eyebrow">Selected work</p><h2 id="work-heading">Follow the curiosity.</h2></div><a class="text-link" href="projects.html">The project notebook</a></div>
+      <div class="section-heading reveal"><div><p class="eyebrow">Selected work</p><h2 id="work-heading">Follow the curiosity.</h2></div></div>
       <div class="project-picker" aria-label="Choose a project" hidden>
         <button type="button" data-project-select="indy" aria-pressed="true" aria-controls="project-indy">IndyHAX <span>Community</span></button>
         <button type="button" data-project-select="unfolded" aria-pressed="false" aria-controls="project-unfolded">Unfolded <span>Game development</span></button>
@@ -60,28 +60,22 @@
       </div>
       <div class="project-stage">
         <article class="work-panel" id="project-indy" data-project="indy" aria-labelledby="indy-heading">
-          <div class="work-visual visual-indy"><span class="visual-label">A student CTF + hackathon</span><div class="indy-logo"><img src="img/indyhax-logo.png" alt="IndyHAX logo: a gnome wearing goggles riding a yellow duck" width="500" height="500" loading="lazy"></div><span class="visual-bottom">IndyHAX / Independence High School</span></div>
-          <div class="work-copy"><p class="eyebrow">Community × security</p><h3 id="indy-heading">Better when we<br>figure it out together.</h3><p>I co-founded IndyHAX, a hybrid CTF and hackathon open to high school students. It's a place to tackle cybersecurity challenges, build coding projects, and learn alongside other curious people.</p><p class="project-meta">My role / Co-founder</p><div class="link-row"><a class="button button-dark" href="https://indyhax.com/" target="_blank" rel="noopener noreferrer">Visit IndyHAX</a><a class="text-link" href="projects.html#indyhax">Read the notebook</a></div></div>
+          <div class="work-visual visual-indy"><span class="visual-label">A student CTF + hackathon</span><div class="indy-logo"><img src="img/indyhax-logo.webp" alt="IndyHAX logo: a gnome wearing goggles riding a yellow duck" width="500" height="500" loading="lazy"></div><span class="visual-bottom">IndyHAX / Independence High School</span></div>
+          <div class="work-copy"><p class="eyebrow">Community × security</p><h3 id="indy-heading">Better when we<br>figure it out together.</h3><p>I co-founded IndyHAX, a hybrid CTF and hackathon for high school students to tackle cybersecurity challenges and build coding projects together.</p><p class="project-meta">My role / Co-founder</p><div class="link-row"><a class="button button-dark" href="https://indyhax.com/" target="_blank" rel="noopener noreferrer">Visit IndyHAX</a></div></div>
         </article>
         <article class="work-panel" id="project-unfolded" data-project="unfolded" aria-labelledby="unfolded-heading">
           <div class="work-visual visual-unfolded"><span class="visual-label">Codename: Unfolded</span><div class="door-scene" aria-hidden="true"><div class="door-frame"><div class="door-leaf"></div></div></div><span class="visual-bottom">Concept artwork / Unreal Engine 5</span></div>
-          <div class="work-copy"><p class="eyebrow">Game development</p><h3 id="unfolded-heading">Something is<br>behind that door.</h3><p>I'm developing a horror game in Unreal Engine 5 under the working codename Unfolded. The official title is still undecided.</p><p class="project-meta">Status / In development</p><div class="link-row"><a class="button button-dark" href="projects.html#unfolded">Open the project notebook</a></div></div>
+          <div class="work-copy"><p class="eyebrow">Game development</p><h3 id="unfolded-heading">Something is<br>behind that door.</h3><p>Unfolded is the working codename for a horror game I'm developing in Unreal Engine 5.</p><p class="project-meta">Status / In development</p></div>
         </article>
         <article class="work-panel" id="project-expedikiro" data-project="expedikiro" aria-labelledby="expedikiro-heading">
-          <div class="work-visual visual-expedikiro"><span class="visual-label">Expedikiro / Java</span><img src="img/expedikiro.png" alt="Expedikiro prototype showing two characters in a combat arena with health bars" width="627" height="396" loading="lazy"><span class="visual-bottom">Actual gameplay / Open source prototype</span></div>
-          <div class="work-copy"><p class="eyebrow">Code × combat systems</p><h3 id="expedikiro-heading">One more attempt.<br>One better parry.</h3><p>A Java game prototype bringing together combat ideas from Sekiro and Expedition 33. An excuse to get deep into combat mechanics, game architecture, and a lot of debugging.</p><p class="project-meta">Built with / Java</p><div class="link-row"><a class="button button-dark" href="https://github.com/Abhinav0234/expedikiro" target="_blank" rel="noopener noreferrer">Explore the code</a><a class="text-link" href="projects.html#expedikiro">Read the notebook</a></div></div>
+          <div class="work-visual visual-expedikiro"><span class="visual-label">Expedikiro / Java</span><img src="img/expedikiro.webp" alt="Expedikiro prototype showing two characters in a combat arena with health bars" width="627" height="396" loading="lazy"><span class="visual-bottom">Actual gameplay / Open source prototype</span></div>
+          <div class="work-copy"><p class="eyebrow">Code × combat systems</p><h3 id="expedikiro-heading">One more attempt.<br>One better parry.</h3><p>An open source Java game prototype exploring combat systems inspired by Sekiro and Expedition 33. My focus: combat mechanics and game architecture.</p><p class="project-meta">Built with / Java</p><div class="link-row"><a class="button button-dark" href="https://github.com/Abhinav0234/expedikiro" target="_blank" rel="noopener noreferrer">Explore the code</a></div></div>
         </article>
       </div>
     </section>
 
-    <section class="about-section" id="about" aria-labelledby="about-heading"><div class="container about-grid">
-      <figure class="portrait reveal"><img src="img/headshot.jpg" alt="Abhinav speaking at a microphone during an event" width="1024" height="980" loading="lazy"><figcaption>Hi. That's me.</figcaption><span class="portrait-sticker" aria-hidden="true">Always<br>learning.</span></figure>
-      <div class="about-copy reveal"><p class="eyebrow">A little about me</p><h2 id="about-heading">A few interests.<br>One curious brain.</h2><p>I'm Abhinav, a student at Independence High School in Virginia. I compete in CTFs, train through SANS, and study digital forensics to understand how systems break and how to defend them.</p><p>Outside security, I build games in Java and Unreal Engine 5. I like turning an idea into something I can test, play, and keep improving.</p><p>And I like helping other people figure things out, too. I tutor in math, science, computer science, and test prep.</p><a class="text-link" href="#experience">What I've been up to</a></div>
-    </div></section>
-
     <section class="section container" id="achievements" aria-labelledby="achievements-heading">
       <div class="section-heading reveal"><div><p class="eyebrow">A few milestones</p><h2 id="achievements-heading">The work adds up.</h2></div><p class="section-aside">Competitions, credentials,<br>and lessons along the way.</p></div>
-      <div class="featured-highlights reveal"><div><span class="highlight-result">Scholar</span><h3>National Cyber Scholar</h3><p>SANS Cyber Foundations Academy · 2024</p></div><div><span class="highlight-result">3rd place</span><h3>Lockheed Martin CyberQuest</h3><p>Bethesda · 2026</p></div><div><span class="highlight-result">1st place</span><h3>Cyber Security Drone Competition</h3><p>George Mason University · 2026</p></div></div>
       <div class="filter-tabs" id="filterTabs" aria-label="Filter achievements" hidden><button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All milestones</button><button class="filter-btn" type="button" data-filter="cert" aria-pressed="false">Credentials</button><button class="filter-btn" type="button" data-filter="comp" aria-pressed="false">Competitions</button></div>
       <div class="achievement-list" id="achievementsGrid">
         <article class="achievement-row" data-cat="cert"><span class="achievement-result">Award</span><div><h3>National Cyber Scholar</h3><p>SANS Cyber Foundations Academy Scholarship</p><p class="achievement-detail">Recognition for cybersecurity performance and full access to the Cyber Foundations Academy.</p></div><span class="achievement-year">2024</span></article>
@@ -98,16 +92,8 @@
       </div>
     </section>
 
-    <section class="section section-compact container" id="experience" aria-labelledby="experience-heading"><div class="split-heading"><div class="reveal"><p class="eyebrow">Beyond the screen</p><h2 id="experience-heading">Make things.<br> Help people.</h2></div><div class="experience-list">
-      <article class="experience-row"><div class="experience-top"><h3><a href="https://indyhax.com/" target="_blank" rel="noopener noreferrer">IndyHAX</a></h3><span>Co-founder</span></div><p class="experience-date">Independence High School</p><p>Co-founded a hybrid CTF and hackathon open to high school students, bringing people together to solve cybersecurity challenges and build hands-on coding projects.</p></article>
-      <article class="experience-row"><div class="experience-top"><h3>Abhinav's Math &amp; Science</h3><span>Self-employed tutor</span></div><p class="experience-date">Jun 2025 – Present · Loudoun County, Virginia</p><p>One-on-one math and science sessions adapted to each student. Hands-on problem solving to help students get comfortable with STEM basics.</p></article>
-      <article class="experience-row"><div class="experience-top"><h3>Anna Sudha Community Kitchens</h3><span>Volunteer</span></div><p class="experience-date">Aug 2024 – Present</p><p>Preparing and organizing meals for underserved communities. Coordination, cleanup, and whatever keeps the kitchen running.</p></article>
-    </div></div></section>
-
-    <section class="section container" id="education" aria-labelledby="education-heading"><div class="section-heading reveal"><div><p class="eyebrow">Education</p><h2 id="education-heading">Where I'm learning.</h2></div></div><div class="education-list"><div><h3>Independence High School</h3><p>2023 – 2027 · Cybersecurity, CS, and STEM coursework</p></div><div><h3>Academies of Loudoun</h3><p>2026 – 2027 · MATA CISCO Dual Enrollment · Advanced networking and cybersecurity infrastructure</p></div></div></section>
-
     <section class="contact-section" id="connect" aria-labelledby="contact-heading"><div class="container contact-inner"><div class="reveal"><p class="eyebrow">Keep the conversation going</p><h2 id="contact-heading">Got something<br><em>interesting?</em></h2><p>Security questions, game ideas, or something we could build together. I'd like to hear it.</p></div><div class="contact-links"><a class="contact-email" href="mailto:superabhinav05@gmail.com">Say hello.</a><a href="https://www.linkedin.com/in/abhinavboora/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/Abhinav0234" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.instagram.com/realabhi2500/" target="_blank" rel="noopener noreferrer">Instagram</a></div></div></section>
   </main>
-  <footer class="site-footer container"><p>© <span id="year">2026</span> Abhinav Boora</p><p>Built with curiosity. Still figuring things out.</p><a href="#top">Back to top</a></footer>
+  <footer class="site-footer container"><p>© <span id="year">2026</span> Abhinav Boora</p><a href="#top">Back to top</a></footer>
 </body>
 </html>
