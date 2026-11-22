@@ -26,7 +26,7 @@ Open http://127.0.0.1:8080. Both `index.html` and `projects.html` work with this
 
 ## Interaction and accessibility
 
-The hero pairs a CyberQuest photo with the introduction. Project selectors below it change the selected work without moving the reader. Every project and credential remains readable when JavaScript is unavailable. The mobile menu supports Escape and closes after navigation. All controls use native links or buttons with visible keyboard focus.
+The hero blends a CyberQuest photo into the page background with CSS gradients, keeping the introduction readable on the left. On phones, the photo fades in below the introduction. Project selectors below it change the selected work without moving the reader. Every project and credential remains readable when JavaScript is unavailable. The mobile menu supports Escape and closes after navigation. All controls use native links or buttons with visible keyboard focus.
 
 Animations respect `prefers-reduced-motion`. Visitors can also turn motion off using the header control; the choice is stored locally, with no analytics or third-party tracking. If local storage is blocked, the choice lasts for the current page.
 

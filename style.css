@@ -163,6 +163,10 @@ h2 em,h1 em  {
 .site-header.is-scrolled  {
   border-bottom-color:var(--line)
 }
+.home .site-header:not(.is-scrolled) {
+  background:transparent;
+  backdrop-filter:none
+}
 .header-inner  {
   min-height:var(--header-height);
   display:flex;
@@ -235,14 +239,31 @@ h2 em,h1 em  {
   font-size:.9rem
 }
 
-/* The introduction and an original CyberQuest photo. */
+/* A full-width photo blends into the paper behind the introduction. */
 .hero  {
-  min-height:640px;
-  display:grid;
-  grid-template-columns:1.15fr 1fr;
+  position:relative;
+  isolation:isolate;
+  min-height:clamp(640px,100svh,920px);
+  margin-top:calc(-1 * var(--header-height));
+  display:flex;
   align-items:center;
-  gap:50px;
-  padding-block:65px 75px
+  overflow:hidden;
+  padding-block:calc(var(--header-height) + 80px) 95px
+}
+.hero::after {
+  content:'';
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background:linear-gradient(0deg,var(--paper),rgb(245 243 235 / 0) 24%,rgb(245 243 235 / 0) 84%,rgb(245 243 235 / .75)),linear-gradient(90deg,var(--paper) 0%,var(--paper) 29%,rgb(245 243 235 / .96) 40%,rgb(245 243 235 / .72) 51%,rgb(245 243 235 / .12) 70%,rgb(245 243 235 / 0) 88%)
+}
+.hero-inner {
+  position:relative
+}
+.hero-copy {
+  width:60%;
+  max-width:690px
 }
 .hero .eyebrow  {
   margin-bottom:26px
@@ -281,31 +302,18 @@ h2 em,h1 em  {
   color:var(--muted)
 }
 .hero-photo  {
-  min-width:0;
-  margin-right:10px;
-  transform:rotate(1deg);
-  transition:transform 750ms var(--ease)
+  position:absolute;
+  inset:0 0 0 auto;
+  width:64%;
+  height:100%;
+  z-index:-2;
+  pointer-events:none
 }
 .hero-photo img  {
   width:100%;
-  height:auto;
-  aspect-ratio:1600/1067;
-  object-fit:contain;
-  border-radius:4px;
-  box-shadow:10px 12px 0 var(--lime);
-  transition:box-shadow 750ms var(--ease)
-}
-.hero-photo figcaption  {
-  margin-top:28px;
-  text-align:right;
-  color:var(--muted);
-  font:400 italic 1.2rem/1.3 var(--display)
-}
-.hero-photo:hover  {
-  transform:rotate(0)
-}
-.hero-photo:hover img  {
-  box-shadow:6px 8px 0 var(--lime)
+  height:100%;
+  object-fit:cover;
+  object-position:35% center
 }
 .js .hero-photo  {
   animation:photo-in 900ms var(--ease) 120ms backwards
@@ -313,11 +321,11 @@ h2 em,h1 em  {
 @keyframes photo-in  {
   from  {
     opacity:0;
-    transform:translateY(20px) rotate(3deg)
+    transform:scale(1.025)
   }
   to  {
     opacity:1;
-    transform:rotate(1deg)
+    transform:scale(1)
   }
 }
 .proof-strip  {
@@ -884,7 +892,7 @@ html[data-motion=off] .reveal.is-pending  {
 }
 @media(min-width:1500px)  {
   .hero  {
-    min-height:720px
+    min-height:min(100svh,1000px)
   }
 }
 @media(max-width:1100px)  {
@@ -892,8 +900,7 @@ html[data-motion=off] .reveal.is-pending  {
     width:calc(100% - 80px)
   }
   .hero  {
-    gap:20px;
-    min-height:600px
+    padding-block:calc(var(--header-height) + 65px) 85px
   }
   .hero h1  {
     font-size:clamp(4rem,7.7vw,6rem)
@@ -940,10 +947,8 @@ html[data-motion=off] .reveal.is-pending  {
     font-size:.8rem
   }
   .hero  {
-    grid-template-columns:1fr 1fr;
-    gap:15px;
-    min-height:570px;
-    padding-block:45px 60px
+    min-height:680px;
+    padding-block:calc(var(--header-height) + 60px) 85px
   }
   .hero h1  {
     font-size:clamp(3.55rem,7.6vw,4.4rem)
@@ -1071,10 +1076,25 @@ html[data-motion=off] .reveal.is-pending  {
     min-height:44px
   }
   .hero  {
-    grid-template-columns:1fr;
+    display:block;
     min-height:0;
-    padding-block:38px 42px;
-    gap:42px
+    padding-block:calc(var(--header-height) + 38px) 330px
+  }
+  .hero-copy {
+    width:100%;
+    max-width:none
+  }
+  .hero-photo {
+    top:auto;
+    bottom:0;
+    width:100%;
+    height:430px
+  }
+  .hero-photo img {
+    object-position:35% 58%
+  }
+  .hero::after {
+    background:linear-gradient(180deg,var(--paper) 0%,var(--paper) 43%,rgb(245 243 235 / .9) 55%,rgb(245 243 235 / .18) 73%,rgb(245 243 235 / 0) 83%,var(--paper) 100%)
   }
   .hero .eyebrow  {
     font-size:.68rem;
