@@ -1397,7 +1397,8 @@ html[data-motion=off] .project-cover[data-place=front] {
   }
   .highlight-result {
     grid-row:1/3;
-    font-size:2.4rem;
+    font-size:2.2rem;
+    white-space:nowrap;
     margin-bottom:0
   }
   .featured-highlights h3 {
