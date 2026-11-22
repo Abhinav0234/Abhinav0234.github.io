@@ -1,128 +1,17 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore a horror game in development by Abhinav Boora using Unreal Engine 5. Unfolded is its working codename; the official title is still undecided.">
-  <meta name="author" content="Abhinav Boora">
-  <meta name="theme-color" content="#173c44">
-  <title>Projects | Abhinav Boora</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=index.html#projects">
+  <link rel="canonical" href="https://abhiboora.com/#projects">
+  <title>Projects — Abhinav Boora</title>
+  <script>
+    const projects = { '#indyhax': '#project-indy', '#unfolded': '#project-unfolded', '#expedikiro': '#project-expedikiro' };
+    window.location.replace('index.html' + (projects[window.location.hash] || '#projects'));
+  </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html#top" class="site-logo"><span class="logo-mark" aria-hidden="true">ab.</span> Abhinav Boora</a>
-      <nav aria-label="Main navigation">
-        <ul class="nav-links" id="navLinks">
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#achievements">Achievements</a></li>
-          <li><a href="index.html#skills">Skills</a></li>
-          <li><a href="index.html#experience">Experience</a></li>
-          <li><a href="#projects" aria-current="page">Projects</a></li>
-          <li><a href="index.html#connect">Connect</a></li>
-        </ul>
-      </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <section class="hero hero--compact" id="top">
-    <div class="container">
-      <p class="hero-label">Creative Portfolio</p>
-      <h1 class="hero-title">Ideas into<br><span>something real.</span></h1>
-      <p class="hero-subtitle">Developing a horror game in Unreal Engine 5 under the working codename Unfolded. The official title is still undecided. More info coming soon.</p>
-      <div class="hero-actions">
-        <a class="btn-primary" href="#projects">Explore the Project <span aria-hidden="true">↘</span></a>
-        <a class="btn-outline" href="index.html#connect">Get in Touch <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-  </section>
-
-  <main id="main">
-    <section class="section section--alt" id="projects">
-      <div class="container">
-        <p class="section-label">Featured</p>
-        <h2 class="section-title">A game taking shape.</h2>
-        <p class="section-desc">A horror game in development with Unreal Engine 5, currently codenamed Unfolded.</p>
-        <div class="project-details">
-          <article class="detail-card game-feature">
-            <div class="feature-symbol" aria-hidden="true">U.</div>
-            <h3 class="project-title">Codename: Unfolded</h3>
-            <span class="project-status">Horror Game · In Development</span>
-            <p>I'm developing a horror game in Unreal Engine 5. Unfolded is the working codename; the official title is still undecided. More info coming soon.</p>
-            <div class="project-tags">
-              <span class="project-tag">Unreal Engine 5</span>
-              <span class="project-tag">Horror</span>
-              <span class="project-tag">Game Development</span>
-            </div>
-          </article>
-          <article class="detail-card">
-            <h3>What I'm Building</h3>
-            <ul class="detail-list">
-              <li>Horror game · Working codename: Unfolded</li>
-              <li>Built with Unreal Engine 5</li>
-              <li>Official title to be announced</li>
-            </ul>
-          </article>
-          <article class="detail-card">
-            <h3>Project Status</h3>
-            <p>In development. More details about the game will be shared soon.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <p class="section-label">Collaborate</p>
-        <h2 class="section-title">Follow along.</h2>
-        <p class="section-desc">Follow the development of my horror game, currently codenamed Unfolded. More details and updates are coming soon.</p>
-        <div class="projects-grid collaborate-grid">
-          <article class="detail-card">
-            <h3>Collaborate With Me</h3>
-            <div class="achievement-meta">Open to partnerships</div>
-            <p>Whether you're a fellow student, mentor, or industry professional — I'd love to connect and explore opportunities to build something meaningful together.</p>
-            <a class="btn-outline" href="mailto:superabhinav05@gmail.com">Reach Out <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="detail-card">
-            <h3>Follow My Code</h3>
-            <div class="achievement-meta">GitHub Repository</div>
-            <p>Star my repositories to get notified when new projects drop. All code is open source and available for learning and collaboration.</p>
-            <a class="btn-outline" href="https://github.com/Abhinav0234" target="_blank" rel="noopener">View GitHub <span aria-hidden="true">↗</span></a>
-          </article>
-        </div>
-        <a class="text-link" href="index.html#projects">Explore my game development work <span aria-hidden="true">→</span></a>
-      </div>
-    </section>
-
-    <section class="section contact-section">
-      <div class="container">
-        <p class="section-label">Let's Connect</p>
-        <h2 class="section-title">Make something meaningful.</h2>
-        <p class="section-desc">Interested in game development, Unreal Engine 5, or creative collaborations? I'm always looking to connect with fellow developers and creatives.</p>
-        <a class="btn-primary" href="mailto:superabhinav05@gmail.com">Start a Conversation <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p class="footer-copy">&copy; <span id="year"></span> Abhinav Boora. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="https://github.com/Abhinav0234" target="_blank" rel="noopener">GitHub</a>
-        <a href="mailto:superabhinav05@gmail.com">Email</a>
-        <a href="#top">↑ Top</a>
-      </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
+  <main><h1>Projects</h1><p>My projects are now on the <a href="index.html#projects">homepage</a>.</p></main>
 </body>
 </html>
