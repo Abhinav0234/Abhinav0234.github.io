@@ -16,7 +16,7 @@ Open http://127.0.0.1:8080. Both `index.html` and `projects.html` work with this
 
 ## Files
 
-- `index.html`: selected work, about, achievements, experience, skills, and contact.
+- `index.html`: selected work, about, achievements, experience, education, and contact.
 - `projects.html`: the project notebook, with stable anchors for IndyHAX, Unfolded, and Expedikiro.
 - `style.css`: shared design, responsive layout, and CSS animation.
 - `script.js`: navigation, project selection, achievement filters, and optional motion.

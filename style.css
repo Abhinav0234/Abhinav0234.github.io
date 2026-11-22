@@ -780,24 +780,15 @@ h2 em,h1 em {
   color:var(--muted);
   font-size:.9rem
 }
-.toolkit-section {
-  border-top:1px solid var(--line)
-}
-.toolkit-grid {
-  display:grid;
-  grid-template-columns:1fr 1.3fr .85fr;
-  gap:60px
-}
-.toolkit-grid h3,.education-list h3 {
+.education-list h3 {
   font:500 1rem/1.5 var(--body);
   margin-bottom:10px
 }
-.toolkit-grid p,.education-list p {
+.education-list p {
   font-size:.9rem;
   color:var(--muted)
 }
 .education-list {
-  margin-top:55px;
   padding-top:28px;
   border-top:1px solid var(--line);
   display:grid;
@@ -1192,9 +1183,6 @@ html[data-motion=off] .project-cover[data-place=front] {
   .split-heading h2 br {
     display:none
   }
-  .toolkit-grid {
-    gap:30px
-  }
   .contact-inner {
     gap:50px
   }
@@ -1452,17 +1440,9 @@ html[data-motion=off] .project-cover[data-place=front] {
   .experience-row>p:last-child {
     font-size:.95rem
   }
-  .toolkit-grid {
-    grid-template-columns:1fr;
-    gap:26px
-  }
-  .toolkit-grid p {
-    font-size:.95rem
-  }
   .education-list {
     grid-template-columns:1fr;
     gap:25px;
-    margin-top:30px;
     padding-top:26px
   }
   .contact-inner {
