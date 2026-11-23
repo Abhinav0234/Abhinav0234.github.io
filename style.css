@@ -547,6 +547,21 @@ h2 em,h1 em  {
 .achievement-row .achievement-detail  {
   margin-top:4px
 }
+.credential-content {
+  display:flex;
+  align-items:center;
+  gap:20px;
+  min-width:0
+}
+.credential-badge {
+  flex:0 0 auto;
+  width:88px;
+  height:88px;
+  object-fit:contain
+}
+.credential-copy {
+  min-width:0
+}
 .achievement-year  {
   font-size:.8rem;
   color:var(--muted);
@@ -900,6 +915,13 @@ html[data-motion=off] .reveal.is-pending  {
   }
   .achievement-row h3  {
     font-size:.9rem
+  }
+  .credential-content {
+    gap:12px
+  }
+  .credential-badge {
+    width:72px;
+    height:72px
   }
   .achievement-row p  {
     font-size:.78rem

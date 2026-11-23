@@ -21,6 +21,7 @@ Open http://127.0.0.1:8080. The website is a single page.
 - `style.css`: shared design, responsive layout, and CSS animation.
 - `script.js`: navigation, project selection, achievement filters, and optional motion.
 - `img/`: CyberQuest hero photo, gameplay screenshot, and the actual IndyHAX logo from [indyhax.com](https://indyhax.com/logo.PNG). The logo and gameplay image use lossless WebP encoding with identical pixels to the original PNG files.
+- `img/badges/`: supplied scholarship and Pearson certification badges, losslessly encoded as WebP and displayed alongside their matching achievements.
 - `favicon.svg`: the site monogram.
 - `CNAME`: the existing custom domain. Keep this file when deploying to GitHub Pages.
 
